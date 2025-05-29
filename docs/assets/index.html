@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script>
-        const path = window.location.pathname;
-        const match = path.match(/\/assets\/(\d+)/);
-        if (match) {
-            const id = match[1];
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+
+        if (id) {
             window.location.href = `https://script.google.com/a/macros/im.sanken.osaka-u.ac.jp/s/AKfycbx_GK6c5wMug5-1oMY1qlP35Nu9s9VFieyh-CIFEjXHiffyCbIiCthyOSHWBj0ywAqZ/exec?id=${id}`;
         } else {
-            document.body.innerText = "無効なIDです";
+            document.body.innerText = "ID が指定されていません";
         }
     </script>
 </head>
