@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Redirecting...</title>
+    <script>
+        const path = window.location.pathname;
+        const match = path.match(/\/assets\/(\d+)/);
+        if (match) {
+            const id = match[1];
+            window.location.href = `https://script.google.com/a/macros/im.sanken.osaka-u.ac.jp/s/AKfycbx_GK6c5wMug5-1oMY1qlP35Nu9s9VFieyh-CIFEjXHiffyCbIiCthyOSHWBj0ywAqZ/exec?id=${id}`;
+        } else {
+            document.body.innerText = "無効なIDです";
+        }
+    </script>
 </head>
 <body>
-
+<p>Redirecting...</p>
 </body>
 </html>
