@@ -143,16 +143,24 @@ David Chiang (PhD, University of Pennsylvania, 2004) is an associate professor i
 <p>
 <!--<ol type="I">-->
 <a name="ikeuchi"></a>
-<h3>Katsushi Ikeuchi (University of Tokyo)</h3>
-<h3>TBA</h3>
+<h3>Katsushi Ikeuchi (Irobomation LLC)</h3>
+<h3>"Learning-from-Observation2.0"</h3>
+<img src="img/katsushi_ikeuchi.png" width="200"><br><br>
 </p>
 
 <p><b>Abstract:</b><br>
-TBA
+We are developing a Learning-from-Observation (LfO) system that acquires robotic behaviors through the observation of human demonstrations. Unlike the bottom-up approach known as "Learning-from-Demonstration" or "Imitation Learning," which replicates human movements as they are, we are employing a top-down approach (top-down learning-from-observation). This method entails observing only the critical components of human actions through a task model representation (akin to Minsky's frame), generating an abstract representation based on these observations, which is subsequently mapped onto the robot's behavior.
+The advantages of this top-down approach include the ability to generalize and correct observational errors by utilizing an intermediate task model representation, thereby enhancing the affinity with large language models. Furthermore, by tailoring the mapping to each individual robot, the system can be applied to different robotic platforms without necessitating significant modifications to the recognition system.
+The initial step of the system involves the utilization of a large language model (LLM) to comprehend the "what-to-do" from human demonstrations and subsequently retrieve the corresponding task model. This task model directs the CNN-based observation module to focus on specific aspects of human behavior and fills in the requisite parameters for "how-to-do," thereby completing the intermediate representation. Based on this finalized task model, the system activates the appropriate agents from a pre-trained group of agents—trained through reinforcement learning on the "how-to-do" aspect—to execute the robot's actions.
+This presentation will provide a comprehensive overview of the system architecture, the design methodologies for the pre-trained skill sets, and other pertinent details. Furthermore, it will discuss a comparison between this hybrid approach, which integrates traditional robotic techniques with LLMs, and end-to-end (E2E) methodologies, including foundation models.
+
 </p>
 
 <p><b>Bio:</b><br/>
-TBA
+Dr. Ikeuchi founded Irobomation in 2025. Prior to that, he held distinguished positions at MIT's Artificial Intelligence Laboratory, Japan's National Institute of Advanced Industrial Science and Technology (AIST), Carnegie Mellon University's Robotics Institute (CMU-RI), the University of Tokyo and Microsoft Research. His research interests span computer vision, robotics, and Intelligent Transportation Systems (ITS). 
+He has served as the Editor-in-Chief of the International Journal of Computer Vision (IJCV) and the International Journal of Intelligent Transportation Systems (IJITS), as well as the Encyclopedia of Computer Vision. Dr. Ikeuchi has also chaired numerous international conferences, including IROS95, CVPR96, ICCV03, ITSW07, ICRA09, ICPR12, and ICCV17.
+He has been the recipient of several prestigious awards, such as the IEEE PAMI Distinguished Researcher Award, the Okawa Award, the Funai Award, the IEICE Outstanding Achievements and Contributions Award, as well as the Medal of Honor with Purple Ribbon from the Emperor of Japan. Dr. Ikeuchi is a Fellow of IEEE, IAPR, IEICE, IPSJ, and RSJ. He earned his Ph.D. in Information Engineering from the University of Tokyo and his Bachelor's degree in Mechanical Engineering from Kyoto University.
+
 </p>
 <br>
 <hr>
