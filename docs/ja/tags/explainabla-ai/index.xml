@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explainabla AI | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/explainabla-ai/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/tags/explainabla-ai/index.xml" rel="self" type="application/rss+xml"/><description>Explainabla AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Explainabla AI</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/explainabla-ai/</link></image><item><title>説明可能なAI</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explainabla AI | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/explainabla-ai/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/tags/explainabla-ai/index.xml" rel="self" type="application/rss+xml"/><description>Explainabla AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Explainabla AI</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/explainabla-ai/</link></image><item><title>説明可能なAI</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</guid><description>&lt;p>大規模言語モデルを含むニューラルネットワークは、その &lt;strong>ブラックボックス性&lt;/strong> が批判されることがあります。ニューラルネットワークのブラックボックス性とは、入力から出力に至るモデル（ニューラルネットワーク）の内部機序が明らかではないことを指しています。ニューラルネットワークの中ではおびたたしい数の計算がされていますが、数が多すぎてそれぞれが何を表しているかわかりません。このため、入力と出力の間で何が起こっているのかを明らかにすることができないのです。特に医療分野などのように、出力が重大なリスクにつながるような応用では、なぜその判断をしたのかを説明できることが必要になります。「説明可能なAI」は、特にニューラルネットワークの内部機序を明らかにすることを目的とする研究領域です。当研究室では、長く主流となっているポストホックなアプローチ（ニューラルネットワークの学習後に後付けする方法）ではなく、ニューラルネットワーク自体に解釈可能性を持たせて学習する方法について研究を進めています。&lt;/p>
+&lt;h2 id="概念を自動的に特定する説明可能な識別器">概念を自動的に特定する説明可能な識別器&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Learning_Bottleneck_Concepts_in_Image_Classification_CVPR_2023_paper.html" target="_blank" rel="noopener">Bowen Wang, Liangzhi Li, Yuta Nakashima, Hajime Nagahara, &amp;ldquo;Learning bottleneck concepts in image classification&amp;rdquo; CVPR 2023&lt;/a>&lt;/p>
+&lt;p>深層ニューラルネットワークの振る舞いを解釈し、説明することは、多くのタスクにおいて極めて重要です。説明可能AIは、この課題に対処する方法を提供しており、主として各画素が意思決定にどの程度寄与したかを示すことで説明を行います。しかし、そのような説明を解釈するには、専門的な知識を要する場合があります。近年では、解釈可能性の向上に向けた試みとして、概念ベースの枠組みを採用し、いくつかの概念とモデルの意思決定との間に、より高次の関係を与える研究も現れています。本論文では、Bottleneck Concept Learner（BotCL）を提案します。BotCL は、概念に対する明示的な教師あり情報を用いることなく、対象タスクに対する学習を通じて獲得された概念の有無のみによって画像を表現します。また、自己教師あり学習と専用の正則化項を用いることで、獲得された概念が人間にとって理解しやすいものとなるようにしています。画像分類タスクを実験対象として用い、BotCL がニューラルネットワークをより高い解釈可能性を持つ形へ再構築する可能性を示します。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/wbw520/BotCL" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="BotCL" srcset="
+/ja/topics/explainable-ai/botcl_hu_592b578518f9d776.webp 400w,
+/ja/topics/explainable-ai/botcl_hu_a3eb4844ecbcc772.webp 760w,
+/ja/topics/explainable-ai/botcl_hu_ad864b4bc2c3e50c.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/botcl_hu_592b578518f9d776.webp"
+width="760"
+height="197"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="スロットアテンションによる説明可能な識別器">スロットアテンションによる説明可能な識別器&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/ICCV2021/html/Li_SCOUTER_Slot_Attention-Based_Classifier_for_Explainable_Image_Recognition_ICCV_2021_paper.html" target="_blank" rel="noopener">Liangzhi Li, Bowen Wang, Manisha Verma, Yuta Nakashima, Ryo Kawasaki, Hajime Nagahara, &amp;ldquo;Scouter: Slot attention-based classifier for explainable image recognition&amp;rdquo; ICCV 2021&lt;/a>&lt;/p>
+&lt;p>説明可能なAIの多くの手法は、既存の手法の多くは勾配や中間特徴に基づいており、これらは識別器の意思決定過程に直接関与しているわけではありません。本論文では、透明性と高い分類精度を両立する、スロットアテンションに基づく分類器 SCOUTER を提案します。他のアテンションベース手法との主な違いは2点あります。
+(a) SCOUTER の説明は各カテゴリの最終的な信頼度に関与しており、より直感的な解釈を可能にすること、
+(b) すべてのカテゴリに対して、それぞれ対応する肯定的または否定的な説明が与えられることです。これにより、「なぜその画像があるカテゴリに属するのか」あるいは「なぜその画像があるカテゴリに属さないのか」を示すことができます。
+さらに、SCOUTER のために新しい損失関数を設計し、肯定的説明と否定的説明の切り替えや、説明領域の大きさを制御できるようにしました。実験結果から、SCOUTER は小規模および中規模のデータセットにおいて、高い精度を維持しながら、さまざまな評価指標の面でより優れた視覚的説明を与えられることが示されています。&lt;/p>
+&lt;p>コード等は&lt;a href="https://github.com/wbw520/scouter" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="SCOUTER" srcset="
+/ja/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp 400w,
+/ja/topics/explainable-ai/scouter_hu_901021a36a8a49ba.webp 760w,
+/ja/topics/explainable-ai/scouter_hu_702ce5ded1d95f35.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp"
+width="760"
+height="360"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item></channel></rss>

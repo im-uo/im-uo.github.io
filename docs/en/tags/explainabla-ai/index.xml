@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explainabla AI | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/explainabla-ai/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/tags/explainabla-ai/index.xml" rel="self" type="application/rss+xml"/><description>Explainabla AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Explainabla AI</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/explainabla-ai/</link></image><item><title>説明可能なAI</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explainabla AI | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/explainabla-ai/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/tags/explainabla-ai/index.xml" rel="self" type="application/rss+xml"/><description>Explainabla AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Explainabla AI</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/explainabla-ai/</link></image><item><title>Explainable AI</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</guid><description>&lt;p>Neural networks, including large language models, are sometimes criticized for their &lt;strong>black-box nature&lt;/strong>. The black-box nature of neural networks refers to the fact that the internal mechanisms of the model, from input to output, are not clearly understood. Although neural networks perform an enormous number of computations, there are simply too many of them for us to know what each one represents. As a result, it is difficult to clarify what is happening between the input and the output. In applications such as the medical domain, where the output may lead to serious risks, it is particularly important to be able to explain why a certain decision was made. Explainable AI is a research field that aims, in particular, to reveal the internal mechanisms of neural networks. In our laboratory, rather than relying on the long-dominant post hoc approach (i.e., adding explanations after the neural network has already been trained), we are conducting research on methods that endow neural networks themselves with interpretability during training.&lt;/p>
+&lt;h2 id="an-explainable-classifier-that-automatically-identifies-concepts">An Explainable Classifier that Automatically Identifies Concepts&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Learning_Bottleneck_Concepts_in_Image_Classification_CVPR_2023_paper.html" target="_blank" rel="noopener">Bowen Wang, Liangzhi Li, Yuta Nakashima, Hajime Nagahara, &amp;ldquo;Learning bottleneck concepts in image classification&amp;rdquo; CVPR 2023&lt;/a>&lt;/p>
+&lt;p>Interpreting and explaining the behavior of deep neural networks is critically important for many tasks. Explainable AI provides a way to address this challenge, mainly by explaining decisions in terms of how much each pixel contributes to the final prediction. However, interpreting such explanations may require expert knowledge. In recent years, some studies have adopted concept-based frameworks to improve interpretability by providing higher-level relationships between certain concepts and model decisions. In this paper, we propose the Bottleneck Concept Learner (BotCL). BotCL represents an image solely by the presence or absence of concepts learned through training on the target task, without relying on explicit supervision for those concepts. In addition, by using self-supervised learning and dedicated regularization terms, the learned concepts are encouraged to be understandable to humans. Using image classification tasks as the experimental setting, we demonstrate the potential of BotCL to reconstruct neural networks into a more interpretable form.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/wbw520/BotCL" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="BotCL" srcset="
+/en/topics/explainable-ai/botcl_hu_592b578518f9d776.webp 400w,
+/en/topics/explainable-ai/botcl_hu_a3eb4844ecbcc772.webp 760w,
+/en/topics/explainable-ai/botcl_hu_ad864b4bc2c3e50c.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/botcl_hu_592b578518f9d776.webp"
+width="760"
+height="197"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="an-explainable-classifier-based-on-slot-attention">An Explainable Classifier Based on Slot Attention&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/ICCV2021/html/Li_SCOUTER_Slot_Attention-Based_Classifier_for_Explainable_Image_Recognition_ICCV_2021_paper.html" target="_blank" rel="noopener">Liangzhi Li, Bowen Wang, Manisha Verma, Yuta Nakashima, Ryo Kawasaki, Hajime Nagahara, &amp;ldquo;Scouter: Slot attention-based classifier for explainable image recognition&amp;rdquo; ICCV 2021&lt;/a>&lt;/p>
+&lt;p>Many existing methods in explainable AI are based on gradients or intermediate features, which are not directly involved in the classifier’s decision-making process. In this paper, we propose SCOUTER, a slot attention-based classifier that achieves both transparency and high classification accuracy. There are two major differences from other attention-based methods:
+(a) SCOUTER’s explanations directly contribute to the final confidence score of each category, enabling more intuitive interpretation; and
+(b) for every category, corresponding positive or negative explanations are provided. This makes it possible to show not only why an image belongs to a certain category, but also why it does not belong to another category.
+Furthermore, we design a new loss function for SCOUTER, which allows switching between positive and negative explanations and controlling the size of the explanation regions. Experimental results show that SCOUTER provides better visual explanations across various evaluation metrics while maintaining high accuracy on small- and medium-scale datasets.&lt;/p>
+&lt;p>The code and related materials are available &lt;a href="https://github.com/wbw520/scouter" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="SCOUTER" srcset="
+/en/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp 400w,
+/en/topics/explainable-ai/scouter_hu_901021a36a8a49ba.webp 760w,
+/en/topics/explainable-ai/scouter_hu_702ce5ded1d95f35.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp"
+width="760"
+height="360"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item></channel></rss>

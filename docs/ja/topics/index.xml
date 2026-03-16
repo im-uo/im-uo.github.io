@@ -1,4 +1,124 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>研究内容 | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/topics/index.xml" rel="self" type="application/rss+xml"/><description>研究内容</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>研究内容</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/</link></image><item><title>AIのバイアスとその低減</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</guid><description/></item><item><title>説明可能なAI</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</guid><description/></item><item><title>大規模モデルの応用</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/agent-by-llms/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/agent-by-llms/</guid><description/></item><item><title>Vision and Language</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/vision-and-language/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/vision-and-language/</guid><description>&lt;p>深層学習の登場以来、Vision and Language、つまり視覚と自然言語を扱う研究は、コンピュータビジョン分野や自然言語処理分野における中心的なトピックの一つとなりました。画像や映像の意味を理解することと、それらを自然言語で表現できることは、強い関連があると考えられます。以下では、当研究室での取り組みの一例を紹介します（一部、ChatGPTによる日本語訳です）。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>研究内容 | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/topics/index.xml" rel="self" type="application/rss+xml"/><description>研究内容</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>研究内容</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/</link></image><item><title>Quantification and mitigation of AI bias</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</guid><description>&lt;p>ニューラルネットワークはさまざまなタスクで極めて高い性能を達成しています。一方で、この高性能さの一部は「表層的相関」を利用しているとも言われています。表層的相関とは、例えば「ウマ」というクラスを含む画像分類問題で、ウマがいる画像はだいたい草原で撮影されていることから、草原とクラスラベルとしての「ウマ」の間にも高い相関があることになります（ウマのラベルがついてる画像には、大抵草原も写っている）。つまり、ニューラルネットワークは、草原とウマを混同してしまうのです。ウマと草原であればそれほど問題ないかもしれませんが、これがジェンダーや人種などの人の属性に関わってくると、社会的バイアスと呼ばれ、大きな問題になります。当研究室では、社会的バイアスをはじめ、ニューラルネットワークと表層的バイスに関する研究を進めています。&lt;/p>
+&lt;h2 id="clipのためのアノテーションフリーの社会的バイアス低減">CLIPのためのアノテーションフリーの社会的バイアス低減&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2408.10202" target="_blank" rel="noopener">Yusuke Hirota, Min-Hung Chen, Chien-Yi Wang, Yuta Nakashima, Yu-Chiang Frank Wang, Ryo Hachiuma, &amp;ldquo;SANER: Annotation-free Societal Attribute Neutralizer for Debiasing CLIP&amp;rdquo; ICLR 2025.&lt;/a>&lt;/p>
+&lt;p>CLIPのような大規模視覚言語モデルには、人の属性（例えば、性別や年齢）に関する社会的バイアスが含まれていることが知られています。本論文は、CLIPにおける社会的バイアスの問題に取り組むことを目的としています。従来研究では、敵対的学習やテスト時の射影によって社会的バイアスを低減する手法が提案されてきましたが、本論文ではそれらを包括的に検討し、1) 属性情報が入力中で明示的に開示されている場合に、その情報まで失われてしまうこと、2) バイアス低減の過程で属性アノテーションを必要とすること、の二点の限界を明らかにしました。これらの限界を同時に克服しつつ、CLIPにおける社会的バイアスを軽減するために、本論文では、SANER（societal attribute neutralizer）と呼ばれる、単純でありながら効果的なバイアス低減手法を提案します。SANERは、属性に中立な記述に対してのみ、CLIPのテキスト特徴から属性情報を除去する手法です。実験結果より、属性アノテーションを必要とせず、かつ属性に特有な記述については元の情報を保持できるSANERは、既存手法よりも優れたバイアス低減性能を示すことが分かりました。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="SANER" srcset="
+/ja/topics/ethical-ai/saner_hu_76af93825ffed455.webp 400w,
+/ja/topics/ethical-ai/saner_hu_40692ebe895a7794.webp 760w,
+/ja/topics/ethical-ai/saner_hu_51fb97592697edf2.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/saner_hu_76af93825ffed455.webp"
+width="760"
+height="267"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="画像キャプション生成のための社会的バイアス低減">画像キャプション生成のための社会的バイアス低減&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2304.03693" target="_blank" rel="noopener">Yusuke Hirota, Yuta Nakashima, Noa Garcia, &amp;ldquo;Model-Agnostic Gender Debiased Image Captioning&amp;rdquo; CVPR 2023.&lt;/a>&lt;/p>
+&lt;p>本研究では、画像キャプション生成モデルにおけるこのようなジェンダーバイアスの軽減を目的とします。従来研究では、性別の誤分類を減らすために、人に注目するようモデルを誘導することでこの問題に対処してきました。しかしその一方で、正しい性別を予測することと引き換えに、ジェンダーに関するステレオタイプ的な語を生成してしまう傾向がありました。画像キャプション生成モデルに影響するジェンダーバイアスには、次の2種類があると本研究では仮定します。すなわち、1) 文脈を利用して性別を予測してしまうバイアス、2) 性別によって特定の（しばしばステレオタイプ的な）語が生成されやすくなるバイアス、の2つです。これら両方のジェンダーバイアスを軽減するために、本研究ではLIBRAと呼ばれる枠組みを提案します。LIBRAは、人工的にバイアスを付与したサンプルから学習することで、両方のバイアスを低減し、性別の誤分類を是正するとともに、ジェンダーに関してステレオタイプ的な語をより中立的な表現へと置き換えます。&lt;/p>
+&lt;p>コードと論文は&lt;a href="https://github.com/rebnej/LIBRA" target="_blank" rel="noopener">こちら&lt;/a>から。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="社会的バイアスの低減" srcset="
+/ja/topics/ethical-ai/mitigation_captioning_hu_a3790d9116fc34e9.webp 400w,
+/ja/topics/ethical-ai/mitigation_captioning_hu_974871fe61ee1b36.webp 760w,
+/ja/topics/ethical-ai/mitigation_captioning_hu_22520aab7686d927.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/mitigation_captioning_hu_a3790d9116fc34e9.webp"
+width="760"
+height="251"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="画像キャプション生成における社会的バイアスの定量化">画像キャプション生成における社会的バイアスの定量化&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/CVPR2022/html/Hirota_Quantifying_Societal_Bias_Amplification_in_Image_Captioning_CVPR_2022_paper.html" target="_blank" rel="noopener">Yusuke Hirota, Yuta Nakashima, Noa Garcia, &amp;ldquo;Quantifying Societal Bias Amplification in Image Captioning&amp;rdquo; CVPR 2022.&lt;/a>&lt;/p>
+&lt;p>画像キャプション生成モデルは、ジェンダーや人種に関するバイアスを助長しうることが示されていますが、キャプション中の社会的バイアスを測定・定量化・評価するための指標は標準化されていません。そこで本研究では、各指標の長所と限界を包括的に分析するとともに、キャプション生成におけるバイアス増幅を検討するための指標としてLICを提案します。さらに、画像キャプション生成においては、保護属性を正しく予測できているかだけに注目するのでは不十分であり、文脈全体を考慮する必要があります。従来手法および最先端の画像キャプション生成モデルに対して大規模な評価を行った結果、保護属性の予測のみに注目した場合、バイアス低減を目的としたモデルが、かえって予想外にバイアスを増幅していることが明らかになりました。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="社会的バイアスの定量化" srcset="
+/ja/topics/ethical-ai/quantification_hu_6243f5810dbf5bee.webp 400w,
+/ja/topics/ethical-ai/quantification_hu_269be389decd4f1b.webp 760w,
+/ja/topics/ethical-ai/quantification_hu_5cdb91f913b55f0.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/quantification_hu_6243f5810dbf5bee.webp"
+width="760"
+height="363"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>大規模モデルの応用</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/agent-by-llms/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/agent-by-llms/</guid><description>&lt;p>大規模言語モデル（LLM）の飛躍的な発達は、自然言語での高度な推論を可能にしました。LLMを活用するための一つの方法として、LLMをエージェント的に使う方法が考えられています。エージェントとは、与えられたツール等を使って自律的に与えられたタスクをこなすもので、例えばタスクをより細かいサブタスクに分解して、それぞれのサブタスクに必要なツール（APIなど）を呼び出すなどによって最終的に元のタスクを実現します。当研究室では、エージェントの考え方を取り入れることで、LLMの出力に説明可能性を持たせたり、より高度な推論を可能にするための研究を進めています。&lt;/p>
+&lt;h2 id="未知の問題に回答するためのマルチモーダルllmによるグラフの探索と推論">未知の問題に回答するためのマルチモーダルLLMによるグラフの探索と推論&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.html" target="_blank" rel="noopener">Bowen Wang, Zhouqiang Jiang, Yasuaki Susumu, Shotaro Miwa, Tianwei Chen, Yuta Nakashima, &amp;ldquo;Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown&amp;rdquo; ICCV 2025&lt;/a>&lt;/p>
+&lt;p>知識の真の価値は、単に蓄積されることにあるのではなく、それを効果的に活用して未知のものを克服できる可能性にあります。近年のマルチモーダル大規模言語モデル（MLLM）は優れたマルチモーダル能力を示しているものの、関連知識が限られているため、まれにしか遭遇しない特定領域のタスクではしばしば失敗します。この点を検証するために、本研究では視覚的ゲーム認知を実験基盤として採用し、「Monster Hunter: World」を対象に、複数のモダリティと複雑なエンティティ関係を取り入れたマルチモーダル知識グラフ（MH-MMKG）を構築します。また、MH-MMKGに基づく一連の挑戦的なクエリを設計し、複雑な知識検索および推論に対するモデルの能力を評価します。さらに、追加学習を必要とせず、モデルが自律的に関連知識を探索できるマルチエージェント検索器を提案します。実験結果は、我々の手法がMLLMの性能を大幅に向上させることを示しており、マルチモーダル知識拡張推論に新たな視点を与えるとともに、今後の研究のための堅固な基盤を築くものです。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/wbw520/MH-MMKG" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Untamed" srcset="
+/ja/topics/agent-by-llms/untamed_hu_347d3e416a49b2d8.webp 400w,
+/ja/topics/agent-by-llms/untamed_hu_8fe0156ad8ef180a.webp 760w,
+/ja/topics/agent-by-llms/untamed_hu_6e15023d1bf649ad.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/agent-by-llms/untamed_hu_347d3e416a49b2d8.webp"
+width="760"
+height="502"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="llmの医療分野における推論能力評価のためのデータセット">LLMの医療分野における推論能力評価のためのデータセット&lt;/h2>
+&lt;p>&lt;a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/892850bf793e03b5c410dfd9425b94c8-Abstract-Datasets_and_Benchmarks_Track.html" target="_blank" rel="noopener">Bowen Wang, Jiuyang Chang, Yiming Qian, Guoxin Chen, Junhao Chen, Zhouqiang Jiang, Jiahao Zhang, Yuta Nakashima, Hajime Nagahara, &amp;ldquo;DiReCT: Diagnostic reasoning for clinical notes via large language models&amp;rdquo;, NeurIPS DB 2025&lt;/a>&lt;/p>
+&lt;p>LLMは近年、医療分野を含む幅広いタスクや応用において、顕著な能力を示しています。GPT-4のようなモデルは医療質問応答に優れていますが、実際の臨床現場における複雑な課題を扱う際には、解釈可能性の不足が課題となる場合があります。そこで本研究では、臨床ノートを対象とした診断推論データセット DiReCT を導入し、LLMの推論能力および解釈可能性を人間の医師と比較して評価することを目的とします。DiReCTには511件の臨床ノートが含まれており、それぞれについて医師が注意深くアノテーションを行い、臨床ノート中の所見から最終診断に至るまでの診断推論過程を詳細に記述しています。さらに、既存のLLMの学習データには含まれていない可能性のある、推論に必要な重要知識を提供するために、診断知識グラフも用意されています。主要なLLMをDiReCT上で評価した結果、これらのモデルの推論能力と人間の医師の推論能力との間には大きな隔たりがあることが明らかとなり、実世界の臨床場面で効果的に推論できるモデルの必要性が強く示されています。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/wbw520/DiReCT" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="DiRECT" srcset="
+/ja/topics/agent-by-llms/direct_hu_832bff52c6060d9a.webp 400w,
+/ja/topics/agent-by-llms/direct_hu_4f52b1617e4e6aa.webp 760w,
+/ja/topics/agent-by-llms/direct_hu_e9f1cefa965103a3.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/agent-by-llms/direct_hu_832bff52c6060d9a.webp"
+width="760"
+height="192"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>説明可能なAI</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/</guid><description>&lt;p>大規模言語モデルを含むニューラルネットワークは、その &lt;strong>ブラックボックス性&lt;/strong> が批判されることがあります。ニューラルネットワークのブラックボックス性とは、入力から出力に至るモデル（ニューラルネットワーク）の内部機序が明らかではないことを指しています。ニューラルネットワークの中ではおびたたしい数の計算がされていますが、数が多すぎてそれぞれが何を表しているかわかりません。このため、入力と出力の間で何が起こっているのかを明らかにすることができないのです。特に医療分野などのように、出力が重大なリスクにつながるような応用では、なぜその判断をしたのかを説明できることが必要になります。「説明可能なAI」は、特にニューラルネットワークの内部機序を明らかにすることを目的とする研究領域です。当研究室では、長く主流となっているポストホックなアプローチ（ニューラルネットワークの学習後に後付けする方法）ではなく、ニューラルネットワーク自体に解釈可能性を持たせて学習する方法について研究を進めています。&lt;/p>
+&lt;h2 id="概念を自動的に特定する説明可能な識別器">概念を自動的に特定する説明可能な識別器&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Learning_Bottleneck_Concepts_in_Image_Classification_CVPR_2023_paper.html" target="_blank" rel="noopener">Bowen Wang, Liangzhi Li, Yuta Nakashima, Hajime Nagahara, &amp;ldquo;Learning bottleneck concepts in image classification&amp;rdquo; CVPR 2023&lt;/a>&lt;/p>
+&lt;p>深層ニューラルネットワークの振る舞いを解釈し、説明することは、多くのタスクにおいて極めて重要です。説明可能AIは、この課題に対処する方法を提供しており、主として各画素が意思決定にどの程度寄与したかを示すことで説明を行います。しかし、そのような説明を解釈するには、専門的な知識を要する場合があります。近年では、解釈可能性の向上に向けた試みとして、概念ベースの枠組みを採用し、いくつかの概念とモデルの意思決定との間に、より高次の関係を与える研究も現れています。本論文では、Bottleneck Concept Learner（BotCL）を提案します。BotCL は、概念に対する明示的な教師あり情報を用いることなく、対象タスクに対する学習を通じて獲得された概念の有無のみによって画像を表現します。また、自己教師あり学習と専用の正則化項を用いることで、獲得された概念が人間にとって理解しやすいものとなるようにしています。画像分類タスクを実験対象として用い、BotCL がニューラルネットワークをより高い解釈可能性を持つ形へ再構築する可能性を示します。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/wbw520/BotCL" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="BotCL" srcset="
+/ja/topics/explainable-ai/botcl_hu_592b578518f9d776.webp 400w,
+/ja/topics/explainable-ai/botcl_hu_a3eb4844ecbcc772.webp 760w,
+/ja/topics/explainable-ai/botcl_hu_ad864b4bc2c3e50c.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/botcl_hu_592b578518f9d776.webp"
+width="760"
+height="197"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="スロットアテンションによる説明可能な識別器">スロットアテンションによる説明可能な識別器&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/ICCV2021/html/Li_SCOUTER_Slot_Attention-Based_Classifier_for_Explainable_Image_Recognition_ICCV_2021_paper.html" target="_blank" rel="noopener">Liangzhi Li, Bowen Wang, Manisha Verma, Yuta Nakashima, Ryo Kawasaki, Hajime Nagahara, &amp;ldquo;Scouter: Slot attention-based classifier for explainable image recognition&amp;rdquo; ICCV 2021&lt;/a>&lt;/p>
+&lt;p>説明可能なAIの多くの手法は、既存の手法の多くは勾配や中間特徴に基づいており、これらは識別器の意思決定過程に直接関与しているわけではありません。本論文では、透明性と高い分類精度を両立する、スロットアテンションに基づく分類器 SCOUTER を提案します。他のアテンションベース手法との主な違いは2点あります。
+(a) SCOUTER の説明は各カテゴリの最終的な信頼度に関与しており、より直感的な解釈を可能にすること、
+(b) すべてのカテゴリに対して、それぞれ対応する肯定的または否定的な説明が与えられることです。これにより、「なぜその画像があるカテゴリに属するのか」あるいは「なぜその画像があるカテゴリに属さないのか」を示すことができます。
+さらに、SCOUTER のために新しい損失関数を設計し、肯定的説明と否定的説明の切り替えや、説明領域の大きさを制御できるようにしました。実験結果から、SCOUTER は小規模および中規模のデータセットにおいて、高い精度を維持しながら、さまざまな評価指標の面でより優れた視覚的説明を与えられることが示されています。&lt;/p>
+&lt;p>コード等は&lt;a href="https://github.com/wbw520/scouter" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="SCOUTER" srcset="
+/ja/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp 400w,
+/ja/topics/explainable-ai/scouter_hu_901021a36a8a49ba.webp 760w,
+/ja/topics/explainable-ai/scouter_hu_702ce5ded1d95f35.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp"
+width="760"
+height="360"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>Vision and Language</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/vision-and-language/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/vision-and-language/</guid><description>&lt;p>深層学習の登場以来、Vision and Language、つまり視覚と自然言語を扱う研究は、コンピュータビジョン分野や自然言語処理分野における中心的なトピックの一つとなりました。画像や映像の意味を理解することと、それらを自然言語で表現できることは、強い関連があると考えられます。以下では、当研究室での取り組みの一例を紹介します（一部、ChatGPTによる日本語訳です）。&lt;/p>
 &lt;h2 id="explain-me-the-painting-絵画の説明文生成">Explain Me the Painting: 絵画の説明文生成&lt;/h2>
 &lt;p>絵画を見て、「この作品にはどんな物語があるのだろう？」と思ったことはありますか？本研究では、芸術作品に対する理解を深め、芸術を人々により身近なものとするために、美術絵画に対する説明文を生成する枠組みを提案します。現在の人工知能技術をもってしても、芸術作品に対して情報量の多い説明を生成することは困難です。というのも、そのためには作品のスタイル、内容、構図など複数の側面を理解して記述し、さらに画家やその影響、また歴史的背景に関する知識も付け加える必要があるからです。&lt;/p>
 &lt;p>本研究ではマルチトピックかつ知識に基づいたフレームワークを導入します。このフレームワークでは、生成される文章を3つの芸術的トピックに沿って構成し、さらに外部知識を活用して各説明を強化します。本フレームワークは、定量的および定性的な評価、さらに人間による比較評価において、トピックの多様性および情報の正確性の両面で優れた結果を示しました。&lt;/p>

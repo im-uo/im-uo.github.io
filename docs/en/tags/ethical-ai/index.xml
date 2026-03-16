@@ -1,1 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ethical AI | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/ethical-ai/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/tags/ethical-ai/index.xml" rel="self" type="application/rss+xml"/><description>Ethical AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Ethical AI</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/ethical-ai/</link></image><item><title>AIのバイアスとその低減</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ethical AI | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/ethical-ai/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/tags/ethical-ai/index.xml" rel="self" type="application/rss+xml"/><description>Ethical AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Ethical AI</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/ethical-ai/</link></image><item><title>Quantification and mitigation of AI bias</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</guid><description>&lt;p>Neural networks have achieved extremely high performance across a wide range of tasks. At the same time, part of this high performance is often attributed to the use of &amp;ldquo;spurious correlations.&amp;rdquo; A spurious correlation refers, for example, to an image classification task that includes the class &amp;ldquo;horse,&amp;rdquo; where many images containing horses are photographed in grasslands, creating a strong correlation between grasslands and the class label &amp;ldquo;horse&amp;rdquo; (that is, images labeled as horses often also contain grasslands). In other words, neural networks may confuse grasslands with horses. This may not seem like a serious problem when the issue is horse versus grassland, but when such correlations involve human attributes such as gender or race, they become what is known as societal bias, which is a major concern. In our laboratory, we are conducting research on societal bias as well as on neural networks and spurious correlations more broadly.&lt;/p>
+&lt;h2 id="annotation-free-mitigation-of-societal-bias-in-clip">Annotation-Free Mitigation of Societal Bias in CLIP&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2408.10202" target="_blank" rel="noopener">Yusuke Hirota, Min-Hung Chen, Chien-Yi Wang, Yuta Nakashima, Yu-Chiang Frank Wang, Ryo Hachiuma, &amp;ldquo;SANER: Annotation-free Societal Attribute Neutralizer for Debiasing CLIP&amp;rdquo; ICLR 2025.&lt;/a>&lt;/p>
+&lt;p>Large-scale vision-language models such as CLIP are known to contain societal bias regarding human attributes such as gender and age. This paper aims to address the problem of societal bias in CLIP. Prior studies have proposed methods to mitigate societal bias through adversarial learning or test-time projection. However, this paper comprehensively examines those approaches and identifies two limitations: (1) when attribute information is explicitly disclosed in the input, that information may also be lost, and (2) attribute annotations are required during the debiasing process. To overcome these limitations simultaneously while mitigating societal bias in CLIP, this paper proposes SANER (societal attribute neutralizer), a simple yet effective debiasing method. SANER removes attribute information from CLIP text features only for attribute-neutral descriptions. Experimental results show that SANER, which does not require attribute annotations and preserves the original information for attribute-specific descriptions, achieves better debiasing performance than existing methods.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="SANER" srcset="
+/en/topics/ethical-ai/saner_hu_76af93825ffed455.webp 400w,
+/en/topics/ethical-ai/saner_hu_40692ebe895a7794.webp 760w,
+/en/topics/ethical-ai/saner_hu_51fb97592697edf2.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/saner_hu_76af93825ffed455.webp"
+width="760"
+height="267"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="mitigating-societal-bias-in-image-captioning">Mitigating Societal Bias in Image Captioning&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2304.03693" target="_blank" rel="noopener">Yusuke Hirota, Yuta Nakashima, Noa Garcia, &amp;ldquo;Model-Agnostic Gender Debiased Image Captioning&amp;rdquo; CVPR 2023.&lt;/a>&lt;/p>
+&lt;p>This study aims to mitigate gender bias in image captioning models. Prior work has addressed this problem by encouraging models to focus on people in order to reduce gender misclassification. However, in exchange for predicting the correct gender, such approaches tended to generate stereotypical gender-related words. This study assumes that there are two types of gender bias affecting image captioning models: (1) bias that leads the model to predict gender from contextual cues, and (2) bias that makes certain words, often stereotypical ones, more likely to be generated depending on gender. To mitigate both types of gender bias, this study proposes a framework called LIBRA. By learning from artificially biased samples, LIBRA reduces both forms of bias, corrects gender misclassification, and replaces gender-stereotypical expressions with more neutral ones.&lt;/p>
+&lt;p>The code and paper are available &lt;a href="https://github.com/rebnej/LIBRA" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Mitigating Societal Bias" srcset="
+/en/topics/ethical-ai/mitigation_captioning_hu_a3790d9116fc34e9.webp 400w,
+/en/topics/ethical-ai/mitigation_captioning_hu_974871fe61ee1b36.webp 760w,
+/en/topics/ethical-ai/mitigation_captioning_hu_22520aab7686d927.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/mitigation_captioning_hu_a3790d9116fc34e9.webp"
+width="760"
+height="251"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="quantifying-societal-bias-in-image-captioning">Quantifying Societal Bias in Image Captioning&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/CVPR2022/html/Hirota_Quantifying_Societal_Bias_Amplification_in_Image_Captioning_CVPR_2022_paper.html" target="_blank" rel="noopener">Yusuke Hirota, Yuta Nakashima, Noa Garcia, &amp;ldquo;Quantifying Societal Bias Amplification in Image Captioning&amp;rdquo; CVPR 2022.&lt;/a>&lt;/p>
+&lt;p>Image captioning models have been shown to amplify biases related to gender and race, yet there is no standardized metric for measuring, quantifying, and evaluating societal bias in captions. To address this issue, this study provides a comprehensive analysis of the strengths and limitations of existing metrics and proposes LIC as a metric for examining bias amplification in image captioning. Furthermore, in image captioning, it is not sufficient to focus only on whether protected attributes are predicted correctly; the entire context must also be taken into account. Through extensive evaluation of conventional methods and state-of-the-art image captioning models, the study reveals that when attention is paid only to the prediction of protected attributes, models intended to mitigate bias can unexpectedly amplify bias instead.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Quantifying Societal Bias" srcset="
+/en/topics/ethical-ai/quantification_hu_6243f5810dbf5bee.webp 400w,
+/en/topics/ethical-ai/quantification_hu_269be389decd4f1b.webp 760w,
+/en/topics/ethical-ai/quantification_hu_5cdb91f913b55f0.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/quantification_hu_6243f5810dbf5bee.webp"
+width="760"
+height="363"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item></channel></rss>

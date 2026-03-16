@@ -1,0 +1,13 @@
+@article{Lemarchant2025RobustQuote,
+ abstract = {We propose RobustQuote, a novel defense framework designed to enhance the adversarial robustness of vision transformers. The core idea is to leverage trusted reference images drawn from a dynamically changing pool unknown to the attacker as contextual anchors to detect and correct adversarial perturbations in input images. By quoting semantic features from uncorrupted references, RobustQuote mitigates the propagation of corrupted features through the model and uses these references to compute the rectification term. RobustQuote consists of two key modules: a quotation mechanism that propagates the global semantic tokens (i.e., the \[ cls\] tokens) from reference images, and a rectification mechanism that adjusts the image tokens of the adversarial input using contextual signals from those references. During training, the model is explicitly guided to detect and rectify adversarial inputs more aggressively than clean ones. This approach is modular and plug-and-play, making it compatible with a wide range of vision transformer architectures, such as DeiT. Experiments show that RobustQuote achieves adversarial robustness on par with TRADES-trained DeiT under strong threat models, even when the attacker is aware of the reference set. In a more realistic setting where the attacker lacks access to the references, RobustQuote outperforms the second-best defense by +12.2% adversarial accuracy against the C& W attack. Our findings highlight the underexplored potential of incorporating external, attacker-unknown context as a robust defense strategy. RobustQuote offers a promising direction for addressing evolving adversarial threats in modern vision models, directly aligning with the critical challenges in adversarial machine learning and cybersecurity.},
+ author = {Hugo Lemarchant and Hong Liu and Yuta Nakashima},
+ doi = {https://doi.org/10.3390/app15105470},
+ journal = {Applied Sciences},
+ month = {5},
+ number = {10},
+ pages = {5470},
+ title = {RobustQuote: Using Reference Images for Adversarial Robustness},
+ url = {https://www.mdpi.com/2076-3417/15/10/5470},
+ volume = {15},
+ year = {2025}
+}

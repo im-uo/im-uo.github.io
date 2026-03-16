@@ -1,1 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Large Models | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/large-models/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/tags/large-models/index.xml" rel="self" type="application/rss+xml"/><description>Large Models</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Large Models</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/large-models/</link></image><item><title>大規模モデルの応用</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Large Models | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/large-models/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/tags/large-models/index.xml" rel="self" type="application/rss+xml"/><description>Large Models</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Large Models</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/large-models/</link></image><item><title>Agentic MLLMs</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</guid><description>&lt;p>Large language models (LLMs) have advanced dramatically, enabling sophisticated reasoning in natural language. One way to leverage LLMs is to use them in an agentic manner. An agent autonomously accomplishes a given task by using available tools, for example by decomposing the task into finer-grained subtasks and invoking the tools required for each subtask, such as APIs, to ultimately complete the original task. In our laboratory, we are conducting research on incorporating the idea of agents to make LLM outputs more explainable and to enable more advanced reasoning.&lt;/p>
+&lt;h2 id="graph-exploration-and-reasoning-by-multimodal-llms-for-answering-unknown-problems">Graph Exploration and Reasoning by Multimodal LLMs for Answering Unknown Problems&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.html" target="_blank" rel="noopener">Bowen Wang, Zhouqiang Jiang, Yasuaki Susumu, Shotaro Miwa, Tianwei Chen, Yuta Nakashima, &amp;ldquo;Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown&amp;rdquo; ICCV 2025&lt;/a>&lt;/p>
+&lt;p>The true value of knowledge lies not merely in its accumulation, but in its potential to be effectively utilized to conquer the unknown. Although recent multimodal large language models (MLLMs) have demonstrated impressive multimodal capabilities, they often fail on rarely encountered domain-specific tasks due to limited relevant knowledge. To investigate this issue, this study adopts visual game cognition as a testbed and constructs a multimodal knowledge graph (MH-MMKG) for &lt;em>Monster Hunter: World&lt;/em>, incorporating multiple modalities and complex entity relationships. In addition, we design a series of challenging queries based on MH-MMKG to evaluate the models’ ability in complex knowledge retrieval and reasoning. Furthermore, we propose a multi-agent retriever that enables the model to autonomously search for relevant knowledge without requiring additional training. Experimental results show that our method significantly improves the performance of MLLMs, offering a new perspective on multimodal knowledge-augmented reasoning and laying a solid foundation for future research.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/wbw520/MH-MMKG" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Untamed" srcset="
+/en/topics/agent-by-llms/untamed_hu_347d3e416a49b2d8.webp 400w,
+/en/topics/agent-by-llms/untamed_hu_8fe0156ad8ef180a.webp 760w,
+/en/topics/agent-by-llms/untamed_hu_6e15023d1bf649ad.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/untamed_hu_347d3e416a49b2d8.webp"
+width="760"
+height="502"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="a-dataset-for-evaluating-the-reasoning-ability-of-llms-in-the-medical-domain">A Dataset for Evaluating the Reasoning Ability of LLMs in the Medical Domain&lt;/h2>
+&lt;p>&lt;a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/892850bf793e03b5c410dfd9425b94c8-Abstract-Datasets_and_Benchmarks_Track.html" target="_blank" rel="noopener">Bowen Wang, Jiuyang Chang, Yiming Qian, Guoxin Chen, Junhao Chen, Zhouqiang Jiang, Jiahao Zhang, Yuta Nakashima, Hajime Nagahara, &amp;ldquo;DiReCT: Diagnostic reasoning for clinical notes via large language models&amp;rdquo;, NeurIPS DB 2025&lt;/a>&lt;/p>
+&lt;p>In recent years, LLMs have demonstrated remarkable capabilities across a wide range of tasks and applications, including those in the medical domain. Models such as GPT-4 excel at medical question answering, but when dealing with complex challenges in real clinical settings, the lack of interpretability can become a critical issue. In this study, we introduce DiReCT, a diagnostic reasoning dataset for clinical notes, with the aim of evaluating the reasoning ability and interpretability of LLMs in comparison with human physicians. DiReCT contains 511 clinical notes, each carefully annotated by physicians with detailed descriptions of the diagnostic reasoning process, from findings in the clinical notes to the final diagnosis. In addition, a diagnostic knowledge graph is provided to supply important knowledge required for reasoning that may not be included in the training data of existing LLMs. Evaluation of major LLMs on DiReCT reveals a substantial gap between the reasoning abilities of these models and those of human physicians, strongly highlighting the need for models that can reason effectively in real-world clinical settings.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/wbw520/DiReCT" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="DiRECT" srcset="
+/en/topics/agent-by-llms/direct_hu_832bff52c6060d9a.webp 400w,
+/en/topics/agent-by-llms/direct_hu_4f52b1617e4e6aa.webp 760w,
+/en/topics/agent-by-llms/direct_hu_e9f1cefa965103a3.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/direct_hu_832bff52c6060d9a.webp"
+width="760"
+height="192"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item></channel></rss>

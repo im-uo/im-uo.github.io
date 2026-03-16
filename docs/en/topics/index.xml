@@ -1,24 +1,144 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research Topics | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/topics/index.xml" rel="self" type="application/rss+xml"/><description>Research Topics</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Research Topics</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/</link></image><item><title>AIのバイアスとその低減</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</guid><description/></item><item><title>大規模モデルの応用</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</guid><description/></item><item><title>説明可能なAI</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</guid><description/></item><item><title>Vision and Language</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/vision-and-language/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/vision-and-language/</guid><description>&lt;p>深層学習の登場以来、Vision and Language、つまり視覚と自然言語を扱う研究は、コンピュータビジョン分野や自然言語処理分野における中心的なトピックの一つとなりました。画像や映像の意味を理解することと、それらを自然言語で表現できることは、強い関連があると考えられます。以下では、当研究室での取り組みの一例を紹介します（一部、ChatGPTによる日本語訳です）。&lt;/p>
-&lt;h2 id="explain-me-the-painting-絵画の説明文生成">Explain Me the Painting: 絵画の説明文生成&lt;/h2>
-&lt;p>絵画を見て、「この作品にはどんな物語があるのだろう？」と思ったことはありますか？本研究では、芸術作品に対する理解を深め、芸術を人々により身近なものとするために、美術絵画に対する説明文を生成する枠組みを提案します。現在の人工知能技術をもってしても、芸術作品に対して情報量の多い説明を生成することは困難です。というのも、そのためには作品のスタイル、内容、構図など複数の側面を理解して記述し、さらに画家やその影響、また歴史的背景に関する知識も付け加える必要があるからです。&lt;/p>
-&lt;p>本研究ではマルチトピックかつ知識に基づいたフレームワークを導入します。このフレームワークでは、生成される文章を3つの芸術的トピックに沿って構成し、さらに外部知識を活用して各説明を強化します。本フレームワークは、定量的および定性的な評価、さらに人間による比較評価において、トピックの多様性および情報の正確性の両面で優れた結果を示しました。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research Topics | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/topics/index.xml" rel="self" type="application/rss+xml"/><description>Research Topics</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Research Topics</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/</link></image><item><title>Explainable AI</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/</guid><description>&lt;p>Neural networks, including large language models, are sometimes criticized for their &lt;strong>black-box nature&lt;/strong>. The black-box nature of neural networks refers to the fact that the internal mechanisms of the model, from input to output, are not clearly understood. Although neural networks perform an enormous number of computations, there are simply too many of them for us to know what each one represents. As a result, it is difficult to clarify what is happening between the input and the output. In applications such as the medical domain, where the output may lead to serious risks, it is particularly important to be able to explain why a certain decision was made. Explainable AI is a research field that aims, in particular, to reveal the internal mechanisms of neural networks. In our laboratory, rather than relying on the long-dominant post hoc approach (i.e., adding explanations after the neural network has already been trained), we are conducting research on methods that endow neural networks themselves with interpretability during training.&lt;/p>
+&lt;h2 id="an-explainable-classifier-that-automatically-identifies-concepts">An Explainable Classifier that Automatically Identifies Concepts&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Learning_Bottleneck_Concepts_in_Image_Classification_CVPR_2023_paper.html" target="_blank" rel="noopener">Bowen Wang, Liangzhi Li, Yuta Nakashima, Hajime Nagahara, &amp;ldquo;Learning bottleneck concepts in image classification&amp;rdquo; CVPR 2023&lt;/a>&lt;/p>
+&lt;p>Interpreting and explaining the behavior of deep neural networks is critically important for many tasks. Explainable AI provides a way to address this challenge, mainly by explaining decisions in terms of how much each pixel contributes to the final prediction. However, interpreting such explanations may require expert knowledge. In recent years, some studies have adopted concept-based frameworks to improve interpretability by providing higher-level relationships between certain concepts and model decisions. In this paper, we propose the Bottleneck Concept Learner (BotCL). BotCL represents an image solely by the presence or absence of concepts learned through training on the target task, without relying on explicit supervision for those concepts. In addition, by using self-supervised learning and dedicated regularization terms, the learned concepts are encouraged to be understandable to humans. Using image classification tasks as the experimental setting, we demonstrate the potential of BotCL to reconstruct neural networks into a more interpretable form.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/wbw520/BotCL" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="BotCL" srcset="
+/en/topics/explainable-ai/botcl_hu_592b578518f9d776.webp 400w,
+/en/topics/explainable-ai/botcl_hu_a3eb4844ecbcc772.webp 760w,
+/en/topics/explainable-ai/botcl_hu_ad864b4bc2c3e50c.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/botcl_hu_592b578518f9d776.webp"
+width="760"
+height="197"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="an-explainable-classifier-based-on-slot-attention">An Explainable Classifier Based on Slot Attention&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/ICCV2021/html/Li_SCOUTER_Slot_Attention-Based_Classifier_for_Explainable_Image_Recognition_ICCV_2021_paper.html" target="_blank" rel="noopener">Liangzhi Li, Bowen Wang, Manisha Verma, Yuta Nakashima, Ryo Kawasaki, Hajime Nagahara, &amp;ldquo;Scouter: Slot attention-based classifier for explainable image recognition&amp;rdquo; ICCV 2021&lt;/a>&lt;/p>
+&lt;p>Many existing methods in explainable AI are based on gradients or intermediate features, which are not directly involved in the classifier’s decision-making process. In this paper, we propose SCOUTER, a slot attention-based classifier that achieves both transparency and high classification accuracy. There are two major differences from other attention-based methods:
+(a) SCOUTER’s explanations directly contribute to the final confidence score of each category, enabling more intuitive interpretation; and
+(b) for every category, corresponding positive or negative explanations are provided. This makes it possible to show not only why an image belongs to a certain category, but also why it does not belong to another category.
+Furthermore, we design a new loss function for SCOUTER, which allows switching between positive and negative explanations and controlling the size of the explanation regions. Experimental results show that SCOUTER provides better visual explanations across various evaluation metrics while maintaining high accuracy on small- and medium-scale datasets.&lt;/p>
+&lt;p>The code and related materials are available &lt;a href="https://github.com/wbw520/scouter" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="SCOUTER" srcset="
+/en/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp 400w,
+/en/topics/explainable-ai/scouter_hu_901021a36a8a49ba.webp 760w,
+/en/topics/explainable-ai/scouter_hu_702ce5ded1d95f35.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/explainable-ai/scouter_hu_411ccfaa7fb2816c.webp"
+width="760"
+height="360"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>Quantification and mitigation of AI bias</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/</guid><description>&lt;p>Neural networks have achieved extremely high performance across a wide range of tasks. At the same time, part of this high performance is often attributed to the use of &amp;ldquo;spurious correlations.&amp;rdquo; A spurious correlation refers, for example, to an image classification task that includes the class &amp;ldquo;horse,&amp;rdquo; where many images containing horses are photographed in grasslands, creating a strong correlation between grasslands and the class label &amp;ldquo;horse&amp;rdquo; (that is, images labeled as horses often also contain grasslands). In other words, neural networks may confuse grasslands with horses. This may not seem like a serious problem when the issue is horse versus grassland, but when such correlations involve human attributes such as gender or race, they become what is known as societal bias, which is a major concern. In our laboratory, we are conducting research on societal bias as well as on neural networks and spurious correlations more broadly.&lt;/p>
+&lt;h2 id="annotation-free-mitigation-of-societal-bias-in-clip">Annotation-Free Mitigation of Societal Bias in CLIP&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2408.10202" target="_blank" rel="noopener">Yusuke Hirota, Min-Hung Chen, Chien-Yi Wang, Yuta Nakashima, Yu-Chiang Frank Wang, Ryo Hachiuma, &amp;ldquo;SANER: Annotation-free Societal Attribute Neutralizer for Debiasing CLIP&amp;rdquo; ICLR 2025.&lt;/a>&lt;/p>
+&lt;p>Large-scale vision-language models such as CLIP are known to contain societal bias regarding human attributes such as gender and age. This paper aims to address the problem of societal bias in CLIP. Prior studies have proposed methods to mitigate societal bias through adversarial learning or test-time projection. However, this paper comprehensively examines those approaches and identifies two limitations: (1) when attribute information is explicitly disclosed in the input, that information may also be lost, and (2) attribute annotations are required during the debiasing process. To overcome these limitations simultaneously while mitigating societal bias in CLIP, this paper proposes SANER (societal attribute neutralizer), a simple yet effective debiasing method. SANER removes attribute information from CLIP text features only for attribute-neutral descriptions. Experimental results show that SANER, which does not require attribute annotations and preserves the original information for attribute-specific descriptions, achieves better debiasing performance than existing methods.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="SANER" srcset="
+/en/topics/ethical-ai/saner_hu_76af93825ffed455.webp 400w,
+/en/topics/ethical-ai/saner_hu_40692ebe895a7794.webp 760w,
+/en/topics/ethical-ai/saner_hu_51fb97592697edf2.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/saner_hu_76af93825ffed455.webp"
+width="760"
+height="267"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="mitigating-societal-bias-in-image-captioning">Mitigating Societal Bias in Image Captioning&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2304.03693" target="_blank" rel="noopener">Yusuke Hirota, Yuta Nakashima, Noa Garcia, &amp;ldquo;Model-Agnostic Gender Debiased Image Captioning&amp;rdquo; CVPR 2023.&lt;/a>&lt;/p>
+&lt;p>This study aims to mitigate gender bias in image captioning models. Prior work has addressed this problem by encouraging models to focus on people in order to reduce gender misclassification. However, in exchange for predicting the correct gender, such approaches tended to generate stereotypical gender-related words. This study assumes that there are two types of gender bias affecting image captioning models: (1) bias that leads the model to predict gender from contextual cues, and (2) bias that makes certain words, often stereotypical ones, more likely to be generated depending on gender. To mitigate both types of gender bias, this study proposes a framework called LIBRA. By learning from artificially biased samples, LIBRA reduces both forms of bias, corrects gender misclassification, and replaces gender-stereotypical expressions with more neutral ones.&lt;/p>
+&lt;p>The code and paper are available &lt;a href="https://github.com/rebnej/LIBRA" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Mitigating Societal Bias" srcset="
+/en/topics/ethical-ai/mitigation_captioning_hu_a3790d9116fc34e9.webp 400w,
+/en/topics/ethical-ai/mitigation_captioning_hu_974871fe61ee1b36.webp 760w,
+/en/topics/ethical-ai/mitigation_captioning_hu_22520aab7686d927.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/mitigation_captioning_hu_a3790d9116fc34e9.webp"
+width="760"
+height="251"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="quantifying-societal-bias-in-image-captioning">Quantifying Societal Bias in Image Captioning&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/CVPR2022/html/Hirota_Quantifying_Societal_Bias_Amplification_in_Image_Captioning_CVPR_2022_paper.html" target="_blank" rel="noopener">Yusuke Hirota, Yuta Nakashima, Noa Garcia, &amp;ldquo;Quantifying Societal Bias Amplification in Image Captioning&amp;rdquo; CVPR 2022.&lt;/a>&lt;/p>
+&lt;p>Image captioning models have been shown to amplify biases related to gender and race, yet there is no standardized metric for measuring, quantifying, and evaluating societal bias in captions. To address this issue, this study provides a comprehensive analysis of the strengths and limitations of existing metrics and proposes LIC as a metric for examining bias amplification in image captioning. Furthermore, in image captioning, it is not sufficient to focus only on whether protected attributes are predicted correctly; the entire context must also be taken into account. Through extensive evaluation of conventional methods and state-of-the-art image captioning models, the study reveals that when attention is paid only to the prediction of protected attributes, models intended to mitigate bias can unexpectedly amplify bias instead.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Quantifying Societal Bias" srcset="
+/en/topics/ethical-ai/quantification_hu_6243f5810dbf5bee.webp 400w,
+/en/topics/ethical-ai/quantification_hu_269be389decd4f1b.webp 760w,
+/en/topics/ethical-ai/quantification_hu_5cdb91f913b55f0.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/ethical-ai/quantification_hu_6243f5810dbf5bee.webp"
+width="760"
+height="363"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>Agentic MLLMs</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/</guid><description>&lt;p>Large language models (LLMs) have advanced dramatically, enabling sophisticated reasoning in natural language. One way to leverage LLMs is to use them in an agentic manner. An agent autonomously accomplishes a given task by using available tools, for example by decomposing the task into finer-grained subtasks and invoking the tools required for each subtask, such as APIs, to ultimately complete the original task. In our laboratory, we are conducting research on incorporating the idea of agents to make LLM outputs more explainable and to enable more advanced reasoning.&lt;/p>
+&lt;h2 id="graph-exploration-and-reasoning-by-multimodal-llms-for-answering-unknown-problems">Graph Exploration and Reasoning by Multimodal LLMs for Answering Unknown Problems&lt;/h2>
+&lt;p>&lt;a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.html" target="_blank" rel="noopener">Bowen Wang, Zhouqiang Jiang, Yasuaki Susumu, Shotaro Miwa, Tianwei Chen, Yuta Nakashima, &amp;ldquo;Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown&amp;rdquo; ICCV 2025&lt;/a>&lt;/p>
+&lt;p>The true value of knowledge lies not merely in its accumulation, but in its potential to be effectively utilized to conquer the unknown. Although recent multimodal large language models (MLLMs) have demonstrated impressive multimodal capabilities, they often fail on rarely encountered domain-specific tasks due to limited relevant knowledge. To investigate this issue, this study adopts visual game cognition as a testbed and constructs a multimodal knowledge graph (MH-MMKG) for &lt;em>Monster Hunter: World&lt;/em>, incorporating multiple modalities and complex entity relationships. In addition, we design a series of challenging queries based on MH-MMKG to evaluate the models’ ability in complex knowledge retrieval and reasoning. Furthermore, we propose a multi-agent retriever that enables the model to autonomously search for relevant knowledge without requiring additional training. Experimental results show that our method significantly improves the performance of MLLMs, offering a new perspective on multimodal knowledge-augmented reasoning and laying a solid foundation for future research.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/wbw520/MH-MMKG" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Untamed" srcset="
+/en/topics/agent-by-llms/untamed_hu_347d3e416a49b2d8.webp 400w,
+/en/topics/agent-by-llms/untamed_hu_8fe0156ad8ef180a.webp 760w,
+/en/topics/agent-by-llms/untamed_hu_6e15023d1bf649ad.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/untamed_hu_347d3e416a49b2d8.webp"
+width="760"
+height="502"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="a-dataset-for-evaluating-the-reasoning-ability-of-llms-in-the-medical-domain">A Dataset for Evaluating the Reasoning Ability of LLMs in the Medical Domain&lt;/h2>
+&lt;p>&lt;a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/892850bf793e03b5c410dfd9425b94c8-Abstract-Datasets_and_Benchmarks_Track.html" target="_blank" rel="noopener">Bowen Wang, Jiuyang Chang, Yiming Qian, Guoxin Chen, Junhao Chen, Zhouqiang Jiang, Jiahao Zhang, Yuta Nakashima, Hajime Nagahara, &amp;ldquo;DiReCT: Diagnostic reasoning for clinical notes via large language models&amp;rdquo;, NeurIPS DB 2025&lt;/a>&lt;/p>
+&lt;p>In recent years, LLMs have demonstrated remarkable capabilities across a wide range of tasks and applications, including those in the medical domain. Models such as GPT-4 excel at medical question answering, but when dealing with complex challenges in real clinical settings, the lack of interpretability can become a critical issue. In this study, we introduce DiReCT, a diagnostic reasoning dataset for clinical notes, with the aim of evaluating the reasoning ability and interpretability of LLMs in comparison with human physicians. DiReCT contains 511 clinical notes, each carefully annotated by physicians with detailed descriptions of the diagnostic reasoning process, from findings in the clinical notes to the final diagnosis. In addition, a diagnostic knowledge graph is provided to supply important knowledge required for reasoning that may not be included in the training data of existing LLMs. Evaluation of major LLMs on DiReCT reveals a substantial gap between the reasoning abilities of these models and those of human physicians, strongly highlighting the need for models that can reason effectively in real-world clinical settings.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/wbw520/DiReCT" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="DiRECT" srcset="
+/en/topics/agent-by-llms/direct_hu_832bff52c6060d9a.webp 400w,
+/en/topics/agent-by-llms/direct_hu_4f52b1617e4e6aa.webp 760w,
+/en/topics/agent-by-llms/direct_hu_e9f1cefa965103a3.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/agent-by-llms/direct_hu_832bff52c6060d9a.webp"
+width="760"
+height="192"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>Vision and Language</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/vision-and-language/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/vision-and-language/</guid><description>&lt;p>Since the advent of deep learning, Vision and Language—that is, research dealing with vision and natural language—has become one of the central topics in both computer vision and natural language processing. Understanding the meaning of images and videos, and being able to express that meaning in natural language, are considered to be closely related. Below, we introduce several examples of our laboratory’s work (some parts were translated into Japanese by ChatGPT).&lt;/p>
+&lt;h2 id="explain-me-the-painting-generating-descriptions-for-paintings">Explain Me the Painting: Generating Descriptions for Paintings&lt;/h2>
+&lt;p>Have you ever looked at a painting and wondered, “What kind of story lies behind this work?” In this research, we propose a framework for generating descriptions of fine art paintings in order to deepen the understanding of artworks and make art more accessible to people. Even with current AI technology, generating informative descriptions for artworks remains difficult. This is because doing so requires understanding and describing multiple aspects of a work, such as its style, content, and composition, while also adding knowledge about the painter, artistic influences, and historical background.&lt;/p>
+&lt;p>In this work, we introduce a multi-topic and knowledge-based framework. This framework structures the generated text around three artistic topics and further enriches each description by leveraging external knowledge. Our framework achieved strong results in both quantitative and qualitative evaluations, as well as in human comparative evaluations, in terms of both topic diversity and information accuracy.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/lRtyhIHyZFw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
 &lt;/div>
-&lt;p>詳細とコードは&lt;a href="https://sites.google.com/view/art-description-generation" target="_blank" rel="noopener">こちらのページ&lt;/a>からご確認ください。&lt;/p>
-&lt;h2 id="部分映像検索の性能評価における表層的相関の問題">部分映像検索の性能評価における表層的相関の問題&lt;/h2>
-&lt;p>自然言語クエリによる部分映像検索とは、映像の中からクエリに対応する部分映像を特定・抽出するタスクです。
-自然言語と映像の両方の意味を理解する必要があるため、非常に難易度の高いタスクだと言えます。他の多くのコンピュータビジョンや機械学習の分野の様々なタスクと同様に、部分映像検索の進展はベンチマークデータセットに支えられており、それゆえにデータセットの質がこのタスクに取り組む研究コミュニティ全体に大きな影響を与えます。&lt;/p>
-&lt;p>部分映像検索タスクにおいては（他のタスクと同様に）様々なモデルが提案され、ベンチマークのランキングがどんどん更新されてきました。本研究では、このベンチマークの結果が、実際のモデルの性能をどれだけ正確に反映しているかを実験的に示しています。もしベンチマークがモデルを正しく評価できていないとすれば、大きな問題です。実験結果からは、広く使われるベンチマークデータセットには大きなバイアスが内包されていること、さらに当時の最新モデルはこのバイアスを利用していることが疑われる挙動が明らかになりました。&lt;/p>
-&lt;p>加えて、本研究では新たなサニティチェック（妥当性確認）実験や、結果を視覚的に理解するためのアプローチも提案するとともに、部分映像検索の評価方法を改善するための方向性についても提案します。&lt;/p>
+&lt;p>For details and code, please visit &lt;a href="https://sites.google.com/view/art-description-generation" target="_blank" rel="noopener">this page&lt;/a>.&lt;/p>
+&lt;h2 id="the-problem-of-spurious-correlations-in-evaluating-moment-retrieval-performance">The Problem of Spurious Correlations in Evaluating Moment Retrieval Performance&lt;/h2>
+&lt;p>Moment retrieval with natural language queries is the task of identifying and extracting the segment of a video that corresponds to a given query.
+Because it requires understanding the semantics of both natural language and video, it is an extremely challenging task. As with many other tasks in computer vision and machine learning, progress in moment retrieval has been supported by benchmark datasets, and therefore the quality of those datasets has a major impact on the entire research community working on this task.&lt;/p>
+&lt;p>In moment retrieval, as in many other tasks, various models have been proposed, and benchmark rankings have been continuously updated. In this study, we experimentally examine how accurately these benchmark results reflect the true capabilities of the models. If a benchmark fails to evaluate models properly, that is a serious problem. Our experimental results revealed that widely used benchmark datasets contain substantial biases, and that state-of-the-art models at the time appeared to exhibit behavior suggesting that they were exploiting these biases.&lt;/p>
+&lt;p>In addition, this study proposes new sanity-check experiments and approaches for visually understanding the results, as well as directions for improving the evaluation methodology of moment retrieval.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4xYcR42atws?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
 &lt;/div>
-&lt;p>詳細とコードは&lt;a href="https://mayu-ot.github.io/hidden-challenges-MR/" target="_blank" rel="noopener">こちらのページ&lt;/a>からご確認ください。&lt;/p>
-&lt;h2 id="絵画に関する質問応答のためのデータセット">絵画に関する質問応答のためのデータセット&lt;/h2>
-&lt;p>芸術作品（絵画）に関する質問に答えることは人工知能にとって困難な課題です。なぜなら、多くの場合、絵画について何か質問するときは、そこに描かれた視覚的な情報だけでなく、美術史の学習を通じて得られるその絵画に関するコンテキストの理解が求められるからです。&lt;/p>
-&lt;p>本研究では、芸術に関する質問応答のための新たなデータセットの構築に向けた初の試みとして、AQUA (Art QUestion Answering) というデータセットを紹介します。このデータセットの質問応答（QA）ペアは、既存の美術理解データセットに含まれる絵画とコメントに基づき、最先端の質問生成技術を用いて自動生成されます。生成されたQAペアは、文法の正確さ、質問への回答可能性、そして生成された回答の正しさを基準として、クラウドソーシングによってクレンジングされており、高品質なデータセットとなっています。本データセットは視覚的（絵画に基づく）質問と知識的（コメントに基づく）質問の両方を含んでいます。&lt;/p>
-&lt;p>さらに、視覚的質問と知識的質問をそれぞれ独立に処理するベースラインモデルも提案しています。本研究では、このベースラインモデルを画像に関する質問応答分野の最先端モデルと比較し、芸術分野における質問応答の課題や今後の可能性について包括的に検討しました。&lt;/p>
+&lt;p>For details and code, please visit &lt;a href="https://mayu-ot.github.io/hidden-challenges-MR/" target="_blank" rel="noopener">this page&lt;/a>.&lt;/p>
+&lt;h2 id="a-dataset-for-question-answering-about-paintings">A Dataset for Question Answering about Paintings&lt;/h2>
+&lt;p>Answering questions about artworks, especially paintings, is a difficult challenge for artificial intelligence. This is because, in many cases, asking a question about a painting requires not only understanding the visual information depicted in the work, but also understanding the contextual knowledge about the painting that is acquired through the study of art history.&lt;/p>
+&lt;p>In this study, as an initial attempt toward constructing a new dataset for question answering about art, we introduce a dataset called AQUA (Art QUestion Answering). The question-answer (QA) pairs in this dataset are automatically generated using state-of-the-art question generation techniques based on paintings and comments contained in existing art understanding datasets. The generated QA pairs are then cleaned through crowdsourcing according to criteria such as grammatical correctness, answerability of the question, and correctness of the generated answer, resulting in a high-quality dataset. This dataset includes both visual questions (based on paintings) and knowledge-based questions (based on comments).&lt;/p>
+&lt;p>Furthermore, we also propose baseline models that independently handle visual questions and knowledge-based questions. In this work, we compare these baseline models with state-of-the-art models in visual question answering and comprehensively discuss the challenges and future possibilities of question answering in the domain of art.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/I78SoOkH3dM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
 &lt;/div></description></item></channel></rss>
