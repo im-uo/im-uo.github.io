@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Generative AI | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/generative-ai/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/tags/generative-ai/index.xml" rel="self" type="application/rss+xml"/><description>Generative AI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>Generative AI</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/generative-ai/</link></image><item><title>画像や動画の生成と編集</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/</guid><description>&lt;h2 id="画像生成モデルの分布コントロール">画像生成モデルの分布コントロール&lt;/h2>
+&lt;p>&lt;a href="https://doi.org/10.1016/j.patcog.2025.112614" target="_blank" rel="noopener">Weng Ian Chan, Hiroaki Santo, Yasuyuki Matsushita, Fumio Okura, &amp;ldquo;Instance-wise distribution control of text-to-image diffusion models&amp;rdquo; Pattern Recognition 172*(C):112614, 2026&lt;/a>&lt;/p>
+&lt;p>テキストから画像を生成する拡散モデルは、視覚タスクのための人工データを作る手段として広く使われるようになってきています。しかし、これらのモデルは大規模な学習データに含まれる偏りを引き継いでしまうことが多く、その結果、生成される画像の属性（例えば色や種類など）の分布が偏ってしまうことがあります。これまでにもこうした偏りを減らす研究は行われてきましたが、その多くは単一の物体を対象としており、複数の物体が含まれる画像において、それぞれの物体の属性をうまく制御することは難しいという問題がありました。
+そこで本研究では、事前学習された物体検出器と属性分類器を利用し、拡散モデルを微調整することで、画像内の各物体ごとに属性の分布を制御する方法を提案します。これにより、生成画像に含まれる物体の属性の割合を、ユーザが指定した分布に合わせて調整することが可能になります。
+さまざまな物体や属性を用いた実験により、本手法は指定した分布に沿った高品質な複数物体画像を生成できることが確認されました。この結果は、実世界のような多様な環境に対応した人工データを、大規模に作成するうえで有効であることを示しています。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Distribution control" srcset="
+/ja/topics/gen-ai/chan-pr_hu_77cb27038f1bb73b.webp 400w,
+/ja/topics/gen-ai/chan-pr_hu_93e35abb8086b2fe.webp 760w,
+/ja/topics/gen-ai/chan-pr_hu_b48b71710b548e78.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/chan-pr_hu_77cb27038f1bb73b.webp"
+width="760"
+height="433"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item></channel></rss>
