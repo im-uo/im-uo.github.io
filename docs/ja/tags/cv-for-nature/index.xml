@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CV for Nature | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/cv-for-nature/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/tags/cv-for-nature/index.xml" rel="self" type="application/rss+xml"/><description>CV for Nature</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>CV for Nature</title><link>https://im.sanken.osaka-u.ac.jp/ja/tags/cv-for-nature/</link></image><item><title>動植物のためのコンピュータビジョン</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/</guid><description>&lt;p>動植物は、農業や生命科学分野で重要な対象です。当研究室では、動植物を対象としたコンピュータビジョン（CV）、特に画像や映像から種・形状・構造・成長状態などを定量的に理解するためのCV技術を、基礎から応用に至る幅広い技術要素をターゲットとして研究しています。これらの技術は、農業の高度化や生態系の解明、産業応用に向けた新たな基盤として期待されています。&lt;/p>
+&lt;h2 id="biovita-動物種理解のための大規模マルチモーダルデータセットモデル">BioVITA: 動物種理解のための大規模マルチモーダルデータセット・モデル&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2603.23883" target="_blank" rel="noopener">Risa Shinoda, Kaede Shiohara, Nakamasa Inoue, Kuniaki Saito, Hiroaki Santo, Fumio Okura, &amp;ldquo;BioVITA: Biological dataset, model, and benchmark for visual-textual-acoustic alignment&amp;rdquo; CVPR 2026&lt;/a>&lt;/p>
+&lt;p>画像・テキスト・音声といった複数の種類のデータを使って動物の種を理解することは、コンピュータビジョンと生態学の境界にある新しい課題です。近年、BioCLIPのようなモデルによって、画像と分類学的なテキスト情報の対応づけはうまくできるようになってきましたが、音声をうまく組み込むことはまだ十分に解決されていません。
+本研究では、生物データに特化した新しい統合フレームワーク「BioVITA」を提案します。BioVITAは、（1）学習用データセット、（2）表現モデル、（3）検索ベンチマークの3つから構成されます。
+まず、130万件の音声と230万枚の画像からなる大規模データセットを構築し、14,133種に対して34種類の生態的特徴ラベルを付与しました。次に、BioCLIP2をベースとして、音声・画像・テキストの表現をうまく揃えるための2段階の学習方法を提案します。さらに、3つのモダリティ間（画像・音声・テキスト）のあらゆる組み合わせで検索を行うベンチマークを作成し、分類階層として科・属・種の3レベルで評価できるようにしました。
+実験の結果、本手法は分類情報にとどまらず、種の意味的な特徴まで捉えた統一的な表現を学習できることが分かりました。これにより、生物多様性の理解に向けたマルチモーダル解析をさらに前進させることが期待されます。&lt;/p>
+&lt;p>コードは&lt;a href="https://dahlian00.github.io/BioVITA_Page/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="BioVITA" srcset="
+/ja/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp 400w,
+/ja/topics/nature-vision/biovita_hu_b7f46780a1fff89d.webp 760w,
+/ja/topics/nature-vision/biovita_hu_95925a52b166bcb9.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp"
+width="717"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="zeroplantseg-ゼロショット植物セグメンテーション">ZeroPlantSeg: ゼロショット植物セグメンテーション&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2509.09116" target="_blank" rel="noopener">Junhao Xing, Ryohei Miyakawa, Yang Yang, Xinpeng Liu, Risa Shinoda, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;Zero-shot hierarchical plant segmentation via foundation segmentation models and text-to-image attention&amp;rdquo; WACV 2026&lt;/a>&lt;/p>
+&lt;p>近年のセグメンテーションモデルは、学習なし（ゼロショット）でも、上から撮影した作物画像から葉をある程度うまく切り出すことができます。しかし、複数の葉が重なり合って構成される「植物全体」を分割するのは依然として難しい問題です。このような問題は「階層的セグメンテーション」と呼ばれ、通常は種ごとにアノテーションされた大量の学習データが必要であり、人手の負担も大きいです。
+本研究では、この問題に対して、上から撮影したロゼット型植物を対象としたゼロショット手法「ZeroPlantSeg」を提案します。本手法では、葉の領域を抽出する基盤モデルと、植物の構造を理解する視覚言語モデルを組み合わせることで、追加の学習なしに植物個体を抽出します。
+複数の植物種や成長段階、撮影環境を含むデータセットで評価した結果、本手法は既存のゼロショット手法より高い性能を示し、さらに教師あり手法よりも異なる環境への適応性能に優れていることを確認しました。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/JunhaoXing/ZeroPlantSeg" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
+/ja/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp 400w,
+/ja/topics/nature-vision/zeroplantseg_hu_8fbb8eb769a0989c.webp 760w,
+/ja/topics/nature-vision/zeroplantseg_hu_ac08027917a60c95.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp"
+width="760"
+height="416"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="neuraleaf-neural-parametric-leaf-models">NeuraLeaf: Neural Parametric Leaf Models&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2507.12714" target="_blank" rel="noopener">Yang Yang, Dongni Mao, Hiroaki Santo, Yasuyuki Matsushita, Fumio Okura, &amp;ldquo;NeuraLeaf: Neural Parametric Leaf Models with Shape and Deformation Disentanglement&amp;rdquo; ICCV 2025 Highlight&lt;/a>&lt;/p>
+&lt;p>本研究では、農業やコンピュータグラフィックスにおいて重要となる植物のモデリングや再構成のために、葉の3次元形状を表現するニューラルなパラメトリックモデルを提案します。人や動物に対してはすでに多くの研究がありますが、植物の葉は形の多様さや柔軟な変形のため、扱いが難しいという特徴があります。
+そこで本研究では、葉のための新しいモデル「NeuraLeaf」を提案します。葉は平らに広げるとおおよそ2次元の形として捉えられることに着目し、形状を「2次元の基本形」と「3次元の変形」に分けて表現します。この方法により、豊富に存在する2次元の葉画像データを活用して基本形を学習できるほか、形状に対応したテクスチャも同時に学習することができます。
+さらに、葉の3次元的な変形を表現するために、骨格に依存しない新しいスキニングモデルを提案し、新たに3次元葉データセット「DeformLeaf」を構築しました。実験の結果、NeuraLeafは多様な形状や変形を持つ葉を生成でき、深度画像や点群といった3次元観測データにも高精度に適合できることを示しました。&lt;/p>
+&lt;p>コードは&lt;a href="https://neuraleaf-yang.github.io/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
+/ja/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp 400w,
+/ja/topics/nature-vision/neuraleaf_hu_3c253ca6a633e77d.webp 760w,
+/ja/topics/nature-vision/neuraleaf_hu_4153969e8ebfb160.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp"
+width="760"
+height="318"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="treeformer-plant-skeleton-estimation-via-graph-generation">TreeFormer: Plant Skeleton Estimation via Graph Generation&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2411.16132" target="_blank" rel="noopener">Xinpeng Liu, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;TreeFormer: Single-view plant skeleton estimation via tree-constrained graph generation&amp;rdquo; WACV 2025&lt;/a>&lt;/p>
+&lt;p>植物の枝分かれのような骨格構造を画像から正確に推定することは、スマート農業や植物科学にとって重要です。しかし、人間の骨格のように決まった構造を持つ場合と違い、植物はさまざまな形に枝分かれするため、画像からその構造を推定するのは難しい問題です。特に、画像から「木のような構造（ループのない枝構造）」を正しく推定することが課題となります。
+近年の手法では、画像から細い構造をうまく推定できるようになってきましたが、その結果が必ずしも木構造になるとは限りません。そこで本研究では、木構造であることを保ちながら骨格を推定する手法「TreeFormer」を提案します。
+本手法では、学習によるグラフ生成と、従来のグラフアルゴリズムを組み合わせています。具体的には、学習の途中で生成されたグラフを最小全域木（MST）に変換し、その情報を学習に反映させることで、不要なつながりを抑えながら最適化を行います。
+実験の結果、本手法は、人工的な樹形データ、実際の植物の根、ブドウの枝など、さまざまな対象に対して正確に骨格構造を推定できることを確認しました。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/huntorochi/TreeFormer/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="TreeFormer" srcset="
+/ja/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp 400w,
+/ja/topics/nature-vision/treeformer_hu_66f709809dd6d606.webp 760w,
+/ja/topics/nature-vision/treeformer_hu_261c02ee32bb7c06.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp"
+width="760"
+height="491"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item></channel></rss>

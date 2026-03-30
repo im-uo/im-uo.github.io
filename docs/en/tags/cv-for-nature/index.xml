@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CV for Nature | 複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/cv-for-nature/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/en/tags/cv-for-nature/index.xml" rel="self" type="application/rss+xml"/><description>CV for Nature</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>CV for Nature</title><link>https://im.sanken.osaka-u.ac.jp/en/tags/cv-for-nature/</link></image><item><title>CV for Plants and Animals</title><link>https://im.sanken.osaka-u.ac.jp/en/topics/nature-vision/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/en/topics/nature-vision/</guid><description>&lt;h2 id="biovita-large-scale-dataset-model-and-benchmark-for-multi-modal-animal-recognition">BioVITA: Large-scale Dataset, Model, and Benchmark for Multi-modal Animal Recognition&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2603.23883" target="_blank" rel="noopener">Risa Shinoda, Kaede Shiohara, Nakamasa Inoue, Kuniaki Saito, Hiroaki Santo, Fumio Okura, &amp;ldquo;BioVITA: Biological dataset, model, and benchmark for visual-textual-acoustic alignment&amp;rdquo; CVPR 2026&lt;/a>&lt;/p>
+&lt;p>Understanding animal species from multimodal data poses an emerging challenge at the intersection of computer vision and ecology. While recent biological models, such as BioCLIP, have demonstrated strong alignment between images and textual taxonomic information for species identification, the integration of the audio modality remains an open problem. We propose BioVITA, a novel visual-textual-acoustic alignment framework for biological applications. BioVITA involves (i) a training dataset, (ii) a representation model, and (iii) a retrieval benchmark. First, we construct a large-scale training dataset comprising 1.3 million audio clips and 2.3 million images, covering 14,133 species annotated with 34 ecological trait labels. Second, building upon BioCLIP2, we introduce a two-stage training framework to effectively align audio representations with visual and textual representations. Third, we develop a cross-modal retrieval benchmark that covers all possible directional retrieval across the three modalities (i.e., image-to-audio, audio-to-text, text-to-image, and their reverse directions), with three taxonomic levels: Family, Genus, and Species. Extensive experiments demonstrate that our model learns a unified representation space that captures species-level semantics beyond taxonomy, advancing multimodal biodiversity understanding.&lt;/p>
+&lt;p>The code is available &lt;a href="https://dahlian00.github.io/BioVITA_Page/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="BioVITA" srcset="
+/en/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp 400w,
+/en/topics/nature-vision/biovita_hu_b7f46780a1fff89d.webp 760w,
+/en/topics/nature-vision/biovita_hu_95925a52b166bcb9.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp"
+width="717"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="zeroplantseg-zero-shot-plant-individual-segmentation">ZeroPlantSeg: Zero-shot Plant Individual Segmentation&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2509.09116" target="_blank" rel="noopener">Junhao Xing, Ryohei Miyakawa, Yang Yang, Xinpeng Liu, Risa Shinoda, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;Zero-shot hierarchical plant segmentation via foundation segmentation models and text-to-image attention&amp;rdquo; WACV 2026&lt;/a>&lt;/p>
+&lt;p>Foundation segmentation models achieve reasonable leaf instance extraction from top-view crop images without training (i.e., zero-shot). However, segmenting entire plant individuals with each consisting of multiple overlapping leaves remains challenging. This problem is referred to as a hierarchical segmentation task, typically requiring annotated training datasets, which are often species-specific and require notable human labor. To address this, we introduce ZeroPlantSeg, a zero-shot segmentation for rosette-shaped plant individuals from top-view images. We integrate a foundation segmentation model, extracting leaf instances, and a vision-language model, reasoning about plants&amp;rsquo; structures to extract plant individuals without additional training. Evaluations on datasets with multiple plant species, growth stages, and shooting environments demonstrate that our method surpasses existing zero-shot methods and achieves better cross-domain performance than supervised methods.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/JunhaoXing/ZeroPlantSeg" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
+/en/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp 400w,
+/en/topics/nature-vision/zeroplantseg_hu_8fbb8eb769a0989c.webp 760w,
+/en/topics/nature-vision/zeroplantseg_hu_ac08027917a60c95.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp"
+width="760"
+height="416"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="neuraleaf-neural-parametric-leaf-models">NeuraLeaf: Neural Parametric Leaf Models&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2507.12714" target="_blank" rel="noopener">Yang Yang, Dongni Mao, Hiroaki Santo, Yasuyuki Matsushita, Fumio Okura, &amp;ldquo;NeuraLeaf: Neural Parametric Leaf Models with Shape and Deformation Disentanglement&amp;rdquo; ICCV 2025 Highlight&lt;/a>&lt;/p>
+&lt;p>We develop a neural parametric model for 3D leaves for plant modeling and reconstruction that are essential for agriculture and computer graphics. While neural parametric models are actively studied for humans and animals, plant leaves present unique challenges due to their diverse shapes and flexible deformation. To this problem, we introduce a neural parametric model for leaves, NeuraLeaf. Capitalizing on the fact that flattened leaf shapes can be approximated as a 2D plane, NeuraLeaf disentangles the leaves&amp;rsquo; geometry into their 2D base shapes and 3D deformations. This representation allows learning from rich sources of 2D leaf image datasets for the base shapes, and also has the advantage of simultaneously learning textures aligned with the geometry. To model the 3D deformation, we propose a novel skeleton-free skinning model and create a newly captured 3D leaf dataset called DeformLeaf. We show that NeuraLeaf successfully generates a wide range of leaf shapes with deformation, resulting in accurate model fitting to 3D observations like depth maps and point clouds.&lt;/p>
+&lt;p>The code is available &lt;a href="https://neuraleaf-yang.github.io/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
+/en/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp 400w,
+/en/topics/nature-vision/neuraleaf_hu_3c253ca6a633e77d.webp 760w,
+/en/topics/nature-vision/neuraleaf_hu_4153969e8ebfb160.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp"
+width="760"
+height="318"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="treeformer-plant-skeleton-estimation-via-graph-generation">TreeFormer: Plant Skeleton Estimation via Graph Generation&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2411.16132" target="_blank" rel="noopener">Xinpeng Liu, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;TreeFormer: Single-view plant skeleton estimation via tree-constrained graph generation&amp;rdquo; WACV 2025&lt;/a>&lt;/p>
+&lt;p>Accurate estimation of plant skeletal structure (e.g., branching structure) from images is essential for smart agriculture and plant science. Unlike human skeletons with fixed topology, plant skeleton estimation presents a unique challenge, i.e., estimating arbitrary tree graphs from images. While recent graph generation methods successfully infer thin structures from images, it is challenging to constrain the output graph strictly to a tree structure. To this problem, we present TreeFormer, a plant skeleton estimator via tree-constrained graph generation. Our approach combines learning-based graph generation with traditional graph algorithms to impose the constraints during the training loop. Specifically, our method projects an unconstrained graph onto a minimum spanning tree (MST) during the training loop and incorporates this prior knowledge into the gradient descent optimization by suppressing unwanted feature values. Experiments show that our method accurately estimates target plant skeletal structures for multiple domains: Synthetic tree patterns, real botanical roots, and grapevine branches.&lt;/p>
+&lt;p>The code is available &lt;a href="https://github.com/huntorochi/TreeFormer/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="TreeFormer" srcset="
+/en/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp 400w,
+/en/topics/nature-vision/treeformer_hu_66f709809dd6d606.webp 760w,
+/en/topics/nature-vision/treeformer_hu_261c02ee32bb7c06.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/en/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp"
+width="760"
+height="491"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item></channel></rss>
