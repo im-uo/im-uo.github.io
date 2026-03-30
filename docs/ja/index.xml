@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/index.xml" rel="self" type="application/rss+xml"/><description>複合知能メディア研究室</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/</link></image><item><title>BioVITA: Biological dataset, model, and benchmark for visual-textual-acoustic alignment</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2025-biovita/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2025-biovita/</guid><description/></item><item><title>AnimalCLAP: Taxonomy-aware language-audio pretraining for species recognition and trait inference</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2026-animalclap/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2026-animalclap/</guid><description/></item><item><title>Gaussian mesh renderer for lightweight differentiable rendering</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/liu-2026-gaussian/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/liu-2026-gaussian/</guid><description/></item><item><title>Instance-wise distribution control of text-to-image diffusion models</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/chan-2026-instance/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/chan-2026-instance/</guid><description/></item><item><title>AIのバイアスとその低減</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</guid><description>&lt;p>ニューラルネットワークはさまざまなタスクで極めて高い性能を達成しています。一方で、この高性能さの一部は「表層的相関」を利用しているとも言われています。表層的相関とは、例えば「ウマ」というクラスを含む画像分類問題で、ウマがいる画像はだいたい草原で撮影されていることから、草原とクラスラベルとしての「ウマ」の間にも高い相関があることになります（ウマのラベルがついてる画像には、大抵草原も写っている）。つまり、ニューラルネットワークは、草原とウマを混同してしまうのです。ウマと草原であればそれほど問題ないかもしれませんが、これがジェンダーや人種などの人の属性に関わってくると、社会的バイアスと呼ばれ、大きな問題になります。当研究室では、社会的バイアスをはじめ、ニューラルネットワークと表層的バイスに関する研究を進めています。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/</link><atom:link href="https://im.sanken.osaka-u.ac.jp/ja/index.xml" rel="self" type="application/rss+xml"/><description>複合知能メディア研究室</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja-jp</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://im.sanken.osaka-u.ac.jp/media/logo_hu_5496ce6447801688.png</url><title>複合知能メディア研究室</title><link>https://im.sanken.osaka-u.ac.jp/ja/</link></image><item><title>BioVITA: Biological dataset, model, and benchmark for visual-textual-acoustic alignment</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2025-biovita/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2025-biovita/</guid><description/></item><item><title>AnimalCLAP: Taxonomy-aware language-audio pretraining for species recognition and trait inference</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2026-animalclap/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/shinoda-2026-animalclap/</guid><description/></item><item><title>Gaussian mesh renderer for lightweight differentiable rendering</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/liu-2026-gaussian/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/liu-2026-gaussian/</guid><description/></item><item><title>Instance-wise distribution control of text-to-image diffusion models</title><link>https://im.sanken.osaka-u.ac.jp/ja/publication/chan-2026-instance/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/publication/chan-2026-instance/</guid><description/></item><item><title>画像や動画の生成と編集</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/</guid><description>&lt;h2 id="画像生成モデルの分布コントロール">画像生成モデルの分布コントロール&lt;/h2>
+&lt;p>&lt;a href="https://doi.org/10.1016/j.patcog.2025.112614" target="_blank" rel="noopener">Weng Ian Chan, Hiroaki Santo, Yasuyuki Matsushita, Fumio Okura, &amp;ldquo;Instance-wise distribution control of text-to-image diffusion models&amp;rdquo; Pattern Recognition 172*(C):112614, 2026&lt;/a>&lt;/p>
+&lt;p>テキストから画像を生成する拡散モデルは、視覚タスクのための人工データを作る手段として広く使われるようになってきています。しかし、これらのモデルは大規模な学習データに含まれる偏りを引き継いでしまうことが多く、その結果、生成される画像の属性（例えば色や種類など）の分布が偏ってしまうことがあります。これまでにもこうした偏りを減らす研究は行われてきましたが、その多くは単一の物体を対象としており、複数の物体が含まれる画像において、それぞれの物体の属性をうまく制御することは難しいという問題がありました。
+そこで本研究では、事前学習された物体検出器と属性分類器を利用し、拡散モデルを微調整することで、画像内の各物体ごとに属性の分布を制御する方法を提案します。これにより、生成画像に含まれる物体の属性の割合を、ユーザが指定した分布に合わせて調整することが可能になります。
+さまざまな物体や属性を用いた実験により、本手法は指定した分布に沿った高品質な複数物体画像を生成できることが確認されました。この結果は、実世界のような多様な環境に対応した人工データを、大規模に作成するうえで有効であることを示しています。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="Distribution control" srcset="
+/ja/topics/gen-ai/chan-pr_hu_77cb27038f1bb73b.webp 400w,
+/ja/topics/gen-ai/chan-pr_hu_93e35abb8086b2fe.webp 760w,
+/ja/topics/gen-ai/chan-pr_hu_b48b71710b548e78.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/chan-pr_hu_77cb27038f1bb73b.webp"
+width="760"
+height="433"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>三次元形状・構造・見た目の復元</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/3d-recon/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/3d-recon/</guid><description>&lt;p>画像からの三次元復元はコンピュータビジョン（CV）研究における主要な課題の1つです。特に近年は、推定されたシーンの形状や見え方が観測に一致するように最適化する手法（微分可能レンダリング、NeuS、3Dガウシアンスプラッティングなど）が一般的に用いられるようになってきました。しかし、対象物体の形状のみならず、枝ぶりなどの構造や、視点位置によって変化するような見た目の推定には、未だたくさんの技術的課題があります。当研究室では、微細な三次元形状、複雑な構造、写実的な見た目などに焦点をあて、挑戦的な対象の三次元復元の基盤となる技術を研究しています。&lt;/p>
+&lt;h2 id="同次座標系を導入したガウシアンスプラッティング">同次座標系を導入したガウシアンスプラッティング&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2503.19232" target="_blank" rel="noopener">Xinpeng Liu, Zeyi Huang, Fumio Okura, Yasuyuki Matsushita, &amp;ldquo;HoGS: Unified near and far object reconstruction via homogeneous gaussian splatting&amp;rdquo; CVPR 2025&lt;/a>&lt;/p>
+&lt;p>最近、視点を変えた画像を生成する技術は大きく進歩しており、その中でも3D Gaussian Splatting（3DGS）は、学習が速く、リアルタイムで高品質な描画ができる方法として注目されています。しかし、3DGSは通常の座標系（デカルト座標）に基づいているため、遠くにある物体の表現が苦手であり、特に屋外のような広い空間の再構成では問題となります。本研究では、射影幾何で使われる「同次座標」という考え方を3DGSに取り入れるだけで、シンプルでありながら遠方物体の描画精度が大きく向上することを発見しました。そこで、同次座標を組み込んだ新しい手法「Homogeneous Gaussian Splatting（HoGS）」を提案します。この方法により、近くの物体と遠くの物体を統一的に扱うことができます。HoGSは、射影幾何の考え方を用いることで、特に屋外のような広大な環境において、物体の位置やスケールの変化をうまく扱うことができます。実験の結果、HoGSは近くの物体の描画品質を保ちながら、遠くの物体の再構成精度を大きく向上させることが確認されました。また、従来と同様に高速な学習とリアルタイム描画も可能です。&lt;/p>
+&lt;p>コードは&lt;a href="https://kh129.github.io/hogs/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="HoGS" srcset="
+/ja/topics/3d-recon/hogs_hu_78bfc6a79c6686f6.webp 400w,
+/ja/topics/3d-recon/hogs_hu_91bb50ed31754ff2.webp 760w,
+/ja/topics/3d-recon/hogs_hu_6d096b3cdca8aeab.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/3d-recon/hogs_hu_78bfc6a79c6686f6.webp"
+width="760"
+height="286"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>動植物のためのコンピュータビジョン</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/</guid><description>&lt;p>動植物を対象とするコンピュータビジョン技術の研究は、特に自然界に特有の複雑な形状、多様な見た目、柔軟な変形、そして観測条件のばらつきなどに向き合う必要があります。私たちは、植物の個体・葉・枝構造の理解から、動物の画像・音声・テキストを統合した認識まで、自然を対象とした視覚情報処理の基盤技術から実応用に至るまで、幅広く探究しています。具体的には、植物の個体分割や構造の推定、さらには動物のマルチモーダル表現学習や動作解析などに取り組んでいます。これらの研究は、コンピュータビジョンの新しい課題を切り拓くだけでなく、農業、生態学、生物学における実問題の解決にもつながります。&lt;/p>
+&lt;h2 id="biovita-動物種理解のための大規模マルチモーダルデータセットモデル">BioVITA: 動物種理解のための大規模マルチモーダルデータセット・モデル&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2603.23883" target="_blank" rel="noopener">Risa Shinoda, Kaede Shiohara, Nakamasa Inoue, Kuniaki Saito, Hiroaki Santo, Fumio Okura, &amp;ldquo;BioVITA: Biological dataset, model, and benchmark for visual-textual-acoustic alignment&amp;rdquo; CVPR 2026&lt;/a>&lt;/p>
+&lt;p>画像・テキスト・音声といった複数の種類のデータを使って動物の種を理解することは、コンピュータビジョンと生態学の境界にある新しい課題です。近年、BioCLIPのようなモデルによって、画像と分類学的なテキスト情報の対応づけはうまくできるようになってきましたが、音声をうまく組み込むことはまだ十分に解決されていません。
+本研究では、生物データに特化した新しい統合フレームワーク「BioVITA」を提案します。BioVITAは、（1）学習用データセット、（2）表現モデル、（3）検索ベンチマークの3つから構成されます。
+まず、130万件の音声と230万枚の画像からなる大規模データセットを構築し、14,133種に対して34種類の生態的特徴ラベルを付与しました。次に、BioCLIP2をベースとして、音声・画像・テキストの表現をうまく揃えるための2段階の学習方法を提案します。さらに、3つのモダリティ間（画像・音声・テキスト）のあらゆる組み合わせで検索を行うベンチマークを作成し、分類階層として科・属・種の3レベルで評価できるようにしました。
+実験の結果、本手法は分類情報にとどまらず、種の意味的な特徴まで捉えた統一的な表現を学習できることが分かりました。これにより、生物多様性の理解に向けたマルチモーダル解析をさらに前進させることが期待されます。&lt;/p>
+&lt;p>コードは&lt;a href="https://dahlian00.github.io/BioVITA_Page/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="BioVITA" srcset="
+/ja/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp 400w,
+/ja/topics/nature-vision/biovita_hu_b7f46780a1fff89d.webp 760w,
+/ja/topics/nature-vision/biovita_hu_95925a52b166bcb9.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp"
+width="717"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="zeroplantseg-ゼロショット植物セグメンテーション">ZeroPlantSeg: ゼロショット植物セグメンテーション&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2509.09116" target="_blank" rel="noopener">Junhao Xing, Ryohei Miyakawa, Yang Yang, Xinpeng Liu, Risa Shinoda, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;Zero-shot hierarchical plant segmentation via foundation segmentation models and text-to-image attention&amp;rdquo; WACV 2026&lt;/a>&lt;/p>
+&lt;p>近年のセグメンテーションモデルは、学習なし（ゼロショット）でも、上から撮影した作物画像から葉をある程度うまく切り出すことができます。しかし、複数の葉が重なり合って構成される「植物全体」を分割するのは依然として難しい問題です。このような問題は「階層的セグメンテーション」と呼ばれ、通常は種ごとにアノテーションされた大量の学習データが必要であり、人手の負担も大きいです。
+本研究では、この問題に対して、上から撮影したロゼット型植物を対象としたゼロショット手法「ZeroPlantSeg」を提案します。本手法では、葉の領域を抽出する基盤モデルと、植物の構造を理解する視覚言語モデルを組み合わせることで、追加の学習なしに植物個体を抽出します。
+複数の植物種や成長段階、撮影環境を含むデータセットで評価した結果、本手法は既存のゼロショット手法より高い性能を示し、さらに教師あり手法よりも異なる環境への適応性能に優れていることを確認しました。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/JunhaoXing/ZeroPlantSeg" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
+/ja/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp 400w,
+/ja/topics/nature-vision/zeroplantseg_hu_8fbb8eb769a0989c.webp 760w,
+/ja/topics/nature-vision/zeroplantseg_hu_ac08027917a60c95.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp"
+width="760"
+height="416"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="neuraleaf-neural-parametric-leaf-models">NeuraLeaf: Neural Parametric Leaf Models&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2507.12714" target="_blank" rel="noopener">Yang Yang, Dongni Mao, Hiroaki Santo, Yasuyuki Matsushita, Fumio Okura, &amp;ldquo;NeuraLeaf: Neural Parametric Leaf Models with Shape and Deformation Disentanglement&amp;rdquo; ICCV 2025 Highlight&lt;/a>&lt;/p>
+&lt;p>本研究では、農業やコンピュータグラフィックスにおいて重要となる植物のモデリングや再構成のために、葉の3次元形状を表現するニューラルなパラメトリックモデルを提案します。人や動物に対してはすでに多くの研究がありますが、植物の葉は形の多様さや柔軟な変形のため、扱いが難しいという特徴があります。
+そこで本研究では、葉のための新しいモデル「NeuraLeaf」を提案します。葉は平らに広げるとおおよそ2次元の形として捉えられることに着目し、形状を「2次元の基本形」と「3次元の変形」に分けて表現します。この方法により、豊富に存在する2次元の葉画像データを活用して基本形を学習できるほか、形状に対応したテクスチャも同時に学習することができます。
+さらに、葉の3次元的な変形を表現するために、骨格に依存しない新しいスキニングモデルを提案し、新たに3次元葉データセット「DeformLeaf」を構築しました。実験の結果、NeuraLeafは多様な形状や変形を持つ葉を生成でき、深度画像や点群といった3次元観測データにも高精度に適合できることを示しました。&lt;/p>
+&lt;p>コードは&lt;a href="https://neuraleaf-yang.github.io/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
+/ja/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp 400w,
+/ja/topics/nature-vision/neuraleaf_hu_3c253ca6a633e77d.webp 760w,
+/ja/topics/nature-vision/neuraleaf_hu_4153969e8ebfb160.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp"
+width="760"
+height="318"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="treeformer-plant-skeleton-estimation-via-graph-generation">TreeFormer: Plant Skeleton Estimation via Graph Generation&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2411.16132" target="_blank" rel="noopener">Xinpeng Liu, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;TreeFormer: Single-view plant skeleton estimation via tree-constrained graph generation&amp;rdquo; WACV 2025&lt;/a>&lt;/p>
+&lt;p>植物の枝分かれのような骨格構造を画像から正確に推定することは、スマート農業や植物科学にとって重要です。しかし、人間の骨格のように決まった構造を持つ場合と違い、植物はさまざまな形に枝分かれするため、画像からその構造を推定するのは難しい問題です。特に、画像から「木のような構造（ループのない枝構造）」を正しく推定することが課題となります。
+近年の手法では、画像から細い構造をうまく推定できるようになってきましたが、その結果が必ずしも木構造になるとは限りません。そこで本研究では、木構造であることを保ちながら骨格を推定する手法「TreeFormer」を提案します。
+本手法では、学習によるグラフ生成と、従来のグラフアルゴリズムを組み合わせています。具体的には、学習の途中で生成されたグラフを最小全域木（MST）に変換し、その情報を学習に反映させることで、不要なつながりを抑えながら最適化を行います。
+実験の結果、本手法は、人工的な樹形データ、実際の植物の根、ブドウの枝など、さまざまな対象に対して正確に骨格構造を推定できることを確認しました。&lt;/p>
+&lt;p>コードは&lt;a href="https://github.com/huntorochi/TreeFormer/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center ">
+&lt;div class="w-100" >&lt;img alt="TreeFormer" srcset="
+/ja/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp 400w,
+/ja/topics/nature-vision/treeformer_hu_66f709809dd6d606.webp 760w,
+/ja/topics/nature-vision/treeformer_hu_261c02ee32bb7c06.webp 1200w"
+src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp"
+width="760"
+height="491"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p></description></item><item><title>AIのバイアスとその低減</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/ethical-ai/</guid><description>&lt;p>ニューラルネットワークはさまざまなタスクで極めて高い性能を達成しています。一方で、この高性能さの一部は「表層的相関」を利用しているとも言われています。表層的相関とは、例えば「ウマ」というクラスを含む画像分類問題で、ウマがいる画像はだいたい草原で撮影されていることから、草原とクラスラベルとしての「ウマ」の間にも高い相関があることになります（ウマのラベルがついてる画像には、大抵草原も写っている）。つまり、ニューラルネットワークは、草原とウマを混同してしまうのです。ウマと草原であればそれほど問題ないかもしれませんが、これがジェンダーや人種などの人の属性に関わってくると、社会的バイアスと呼ばれ、大きな問題になります。当研究室では、社会的バイアスをはじめ、ニューラルネットワークと表層的バイスに関する研究を進めています。&lt;/p>
 &lt;h2 id="clipのためのアノテーションフリーの社会的バイアス低減">CLIPのためのアノテーションフリーの社会的バイアス低減&lt;/h2>
 &lt;p>&lt;a href="https://arxiv.org/abs/2408.10202" target="_blank" rel="noopener">Yusuke Hirota, Min-Hung Chen, Chien-Yi Wang, Yuta Nakashima, Yu-Chiang Frank Wang, Ryo Hachiuma, &amp;ldquo;SANER: Annotation-free Societal Attribute Neutralizer for Debiasing CLIP&amp;rdquo; ICLR 2025.&lt;/a>&lt;/p>
 &lt;p>CLIPのような大規模視覚言語モデルには、人の属性（例えば、性別や年齢）に関する社会的バイアスが含まれていることが知られています。本論文は、CLIPにおける社会的バイアスの問題に取り組むことを目的としています。従来研究では、敵対的学習やテスト時の射影によって社会的バイアスを低減する手法が提案されてきましたが、本論文ではそれらを包括的に検討し、1) 属性情報が入力中で明示的に開示されている場合に、その情報まで失われてしまうこと、2) バイアス低減の過程で属性アノテーションを必要とすること、の二点の限界を明らかにしました。これらの限界を同時に克服しつつ、CLIPにおける社会的バイアスを軽減するために、本論文では、SANER（societal attribute neutralizer）と呼ばれる、単純でありながら効果的なバイアス低減手法を提案します。SANERは、属性に中立な記述に対してのみ、CLIPのテキスト特徴から属性情報を除去する手法です。実験結果より、属性アノテーションを必要とせず、かつ属性に特有な記述については元の情報を保持できるSANERは、既存手法よりも優れたバイアス低減性能を示すことが分かりました。&lt;/p>
@@ -79,118 +191,6 @@ loading="lazy" data-zoomable />&lt;/div>
 src="https://im.sanken.osaka-u.ac.jp/ja/topics/agent-by-llms/direct_hu_832bff52c6060d9a.webp"
 width="760"
 height="192"
-loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p></description></item><item><title>動植物のためのコンピュータビジョン</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/</guid><description>&lt;p>動植物を対象とするコンピュータビジョン技術の研究は、特に自然界に特有の複雑な形状、多様な見た目、柔軟な変形、そして観測条件のばらつきなどに向き合う必要があります。私たちは、植物の個体・葉・枝構造の理解から、動物の画像・音声・テキストを統合した認識まで、自然を対象とした視覚情報処理の基盤技術から実応用に至るまで、幅広く探究しています。具体的には、植物の個体分割や構造の推定、さらには動物のマルチモーダル表現学習や動作解析などに取り組んでいます。これらの研究は、コンピュータビジョンの新しい課題を切り拓くだけでなく、農業、生態学、生物学における実問題の解決にもつながります。&lt;/p>
-&lt;h2 id="biovita-動物種理解のための大規模マルチモーダルデータセットモデル">BioVITA: 動物種理解のための大規模マルチモーダルデータセット・モデル&lt;/h2>
-&lt;p>&lt;a href="https://arxiv.org/abs/2603.23883" target="_blank" rel="noopener">Risa Shinoda, Kaede Shiohara, Nakamasa Inoue, Kuniaki Saito, Hiroaki Santo, Fumio Okura, &amp;ldquo;BioVITA: Biological dataset, model, and benchmark for visual-textual-acoustic alignment&amp;rdquo; CVPR 2026&lt;/a>&lt;/p>
-&lt;p>画像・テキスト・音声といった複数の種類のデータを使って動物の種を理解することは、コンピュータビジョンと生態学の境界にある新しい課題です。近年、BioCLIPのようなモデルによって、画像と分類学的なテキスト情報の対応づけはうまくできるようになってきましたが、音声をうまく組み込むことはまだ十分に解決されていません。
-本研究では、生物データに特化した新しい統合フレームワーク「BioVITA」を提案します。BioVITAは、（1）学習用データセット、（2）表現モデル、（3）検索ベンチマークの3つから構成されます。
-まず、130万件の音声と230万枚の画像からなる大規模データセットを構築し、14,133種に対して34種類の生態的特徴ラベルを付与しました。次に、BioCLIP2をベースとして、音声・画像・テキストの表現をうまく揃えるための2段階の学習方法を提案します。さらに、3つのモダリティ間（画像・音声・テキスト）のあらゆる組み合わせで検索を行うベンチマークを作成し、分類階層として科・属・種の3レベルで評価できるようにしました。
-実験の結果、本手法は分類情報にとどまらず、種の意味的な特徴まで捉えた統一的な表現を学習できることが分かりました。これにより、生物多様性の理解に向けたマルチモーダル解析をさらに前進させることが期待されます。&lt;/p>
-&lt;p>コードは&lt;a href="https://dahlian00.github.io/BioVITA_Page/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img alt="BioVITA" srcset="
-/ja/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp 400w,
-/ja/topics/nature-vision/biovita_hu_b7f46780a1fff89d.webp 760w,
-/ja/topics/nature-vision/biovita_hu_95925a52b166bcb9.webp 1200w"
-src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/biovita_hu_726f9ce277a71cd8.webp"
-width="717"
-height="760"
-loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;h2 id="zeroplantseg-ゼロショット植物セグメンテーション">ZeroPlantSeg: ゼロショット植物セグメンテーション&lt;/h2>
-&lt;p>&lt;a href="https://arxiv.org/abs/2509.09116" target="_blank" rel="noopener">Junhao Xing, Ryohei Miyakawa, Yang Yang, Xinpeng Liu, Risa Shinoda, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;Zero-shot hierarchical plant segmentation via foundation segmentation models and text-to-image attention&amp;rdquo; WACV 2026&lt;/a>&lt;/p>
-&lt;p>近年のセグメンテーションモデルは、学習なし（ゼロショット）でも、上から撮影した作物画像から葉をある程度うまく切り出すことができます。しかし、複数の葉が重なり合って構成される「植物全体」を分割するのは依然として難しい問題です。このような問題は「階層的セグメンテーション」と呼ばれ、通常は種ごとにアノテーションされた大量の学習データが必要であり、人手の負担も大きいです。
-本研究では、この問題に対して、上から撮影したロゼット型植物を対象としたゼロショット手法「ZeroPlantSeg」を提案します。本手法では、葉の領域を抽出する基盤モデルと、植物の構造を理解する視覚言語モデルを組み合わせることで、追加の学習なしに植物個体を抽出します。
-複数の植物種や成長段階、撮影環境を含むデータセットで評価した結果、本手法は既存のゼロショット手法より高い性能を示し、さらに教師あり手法よりも異なる環境への適応性能に優れていることを確認しました。&lt;/p>
-&lt;p>コードは&lt;a href="https://github.com/JunhaoXing/ZeroPlantSeg" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
-/ja/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp 400w,
-/ja/topics/nature-vision/zeroplantseg_hu_8fbb8eb769a0989c.webp 760w,
-/ja/topics/nature-vision/zeroplantseg_hu_ac08027917a60c95.webp 1200w"
-src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/zeroplantseg_hu_ef25eedf12a5d141.webp"
-width="760"
-height="416"
-loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;h2 id="neuraleaf-neural-parametric-leaf-models">NeuraLeaf: Neural Parametric Leaf Models&lt;/h2>
-&lt;p>&lt;a href="https://arxiv.org/abs/2507.12714" target="_blank" rel="noopener">Yang Yang, Dongni Mao, Hiroaki Santo, Yasuyuki Matsushita, Fumio Okura, &amp;ldquo;NeuraLeaf: Neural Parametric Leaf Models with Shape and Deformation Disentanglement&amp;rdquo; ICCV 2025 Highlight&lt;/a>&lt;/p>
-&lt;p>本研究では、農業やコンピュータグラフィックスにおいて重要となる植物のモデリングや再構成のために、葉の3次元形状を表現するニューラルなパラメトリックモデルを提案します。人や動物に対してはすでに多くの研究がありますが、植物の葉は形の多様さや柔軟な変形のため、扱いが難しいという特徴があります。
-そこで本研究では、葉のための新しいモデル「NeuraLeaf」を提案します。葉は平らに広げるとおおよそ2次元の形として捉えられることに着目し、形状を「2次元の基本形」と「3次元の変形」に分けて表現します。この方法により、豊富に存在する2次元の葉画像データを活用して基本形を学習できるほか、形状に対応したテクスチャも同時に学習することができます。
-さらに、葉の3次元的な変形を表現するために、骨格に依存しない新しいスキニングモデルを提案し、新たに3次元葉データセット「DeformLeaf」を構築しました。実験の結果、NeuraLeafは多様な形状や変形を持つ葉を生成でき、深度画像や点群といった3次元観測データにも高精度に適合できることを示しました。&lt;/p>
-&lt;p>コードは&lt;a href="https://neuraleaf-yang.github.io/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img alt="ZeroPlantSeg" srcset="
-/ja/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp 400w,
-/ja/topics/nature-vision/neuraleaf_hu_3c253ca6a633e77d.webp 760w,
-/ja/topics/nature-vision/neuraleaf_hu_4153969e8ebfb160.webp 1200w"
-src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/neuraleaf_hu_9de4f2e2d578046c.webp"
-width="760"
-height="318"
-loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;h2 id="treeformer-plant-skeleton-estimation-via-graph-generation">TreeFormer: Plant Skeleton Estimation via Graph Generation&lt;/h2>
-&lt;p>&lt;a href="https://arxiv.org/abs/2411.16132" target="_blank" rel="noopener">Xinpeng Liu, Hiroaki Santo, Yosuke Toda, Fumio Okura, &amp;ldquo;TreeFormer: Single-view plant skeleton estimation via tree-constrained graph generation&amp;rdquo; WACV 2025&lt;/a>&lt;/p>
-&lt;p>植物の枝分かれのような骨格構造を画像から正確に推定することは、スマート農業や植物科学にとって重要です。しかし、人間の骨格のように決まった構造を持つ場合と違い、植物はさまざまな形に枝分かれするため、画像からその構造を推定するのは難しい問題です。特に、画像から「木のような構造（ループのない枝構造）」を正しく推定することが課題となります。
-近年の手法では、画像から細い構造をうまく推定できるようになってきましたが、その結果が必ずしも木構造になるとは限りません。そこで本研究では、木構造であることを保ちながら骨格を推定する手法「TreeFormer」を提案します。
-本手法では、学習によるグラフ生成と、従来のグラフアルゴリズムを組み合わせています。具体的には、学習の途中で生成されたグラフを最小全域木（MST）に変換し、その情報を学習に反映させることで、不要なつながりを抑えながら最適化を行います。
-実験の結果、本手法は、人工的な樹形データ、実際の植物の根、ブドウの枝など、さまざまな対象に対して正確に骨格構造を推定できることを確認しました。&lt;/p>
-&lt;p>コードは&lt;a href="https://github.com/huntorochi/TreeFormer/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img alt="TreeFormer" srcset="
-/ja/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp 400w,
-/ja/topics/nature-vision/treeformer_hu_66f709809dd6d606.webp 760w,
-/ja/topics/nature-vision/treeformer_hu_261c02ee32bb7c06.webp 1200w"
-src="https://im.sanken.osaka-u.ac.jp/ja/topics/nature-vision/treeformer_hu_c34146474c4505ba.webp"
-width="760"
-height="491"
-loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p></description></item><item><title>三次元形状・構造・見た目の復元</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/3d-recon/</link><pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/3d-recon/</guid><description>&lt;p>画像からの三次元復元はコンピュータビジョン（CV）研究における主要な課題の1つです。特に近年は、推定されたシーンの形状や見え方が観測に一致するように最適化する手法（微分可能レンダリング、NeuS、3Dガウシアンスプラッティングなど）が一般的に用いられるようになってきました。しかし、対象物体の形状のみならず、枝ぶりなどの構造や、視点位置によって変化するような見た目の推定には、未だたくさんの技術的課題があります。当研究室では、微細な三次元形状、複雑な構造、写実的な見た目などに焦点をあて、挑戦的な対象の三次元復元の基盤となる技術を研究しています。&lt;/p>
-&lt;h2 id="同次座標系を導入したガウシアンスプラッティング">同次座標系を導入したガウシアンスプラッティング&lt;/h2>
-&lt;p>&lt;a href="https://arxiv.org/abs/2503.19232" target="_blank" rel="noopener">Xinpeng Liu, Zeyi Huang, Fumio Okura, Yasuyuki Matsushita, &amp;ldquo;HoGS: Unified near and far object reconstruction via homogeneous gaussian splatting&amp;rdquo; CVPR 2025&lt;/a>&lt;/p>
-&lt;p>最近、視点を変えた画像を生成する技術は大きく進歩しており、その中でも3D Gaussian Splatting（3DGS）は、学習が速く、リアルタイムで高品質な描画ができる方法として注目されています。しかし、3DGSは通常の座標系（デカルト座標）に基づいているため、遠くにある物体の表現が苦手であり、特に屋外のような広い空間の再構成では問題となります。本研究では、射影幾何で使われる「同次座標」という考え方を3DGSに取り入れるだけで、シンプルでありながら遠方物体の描画精度が大きく向上することを発見しました。そこで、同次座標を組み込んだ新しい手法「Homogeneous Gaussian Splatting（HoGS）」を提案します。この方法により、近くの物体と遠くの物体を統一的に扱うことができます。HoGSは、射影幾何の考え方を用いることで、特に屋外のような広大な環境において、物体の位置やスケールの変化をうまく扱うことができます。実験の結果、HoGSは近くの物体の描画品質を保ちながら、遠くの物体の再構成精度を大きく向上させることが確認されました。また、従来と同様に高速な学習とリアルタイム描画も可能です。&lt;/p>
-&lt;p>コードは&lt;a href="https://kh129.github.io/hogs/" target="_blank" rel="noopener">こちら&lt;/a>。&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img alt="HoGS" srcset="
-/ja/topics/3d-recon/hogs_hu_78bfc6a79c6686f6.webp 400w,
-/ja/topics/3d-recon/hogs_hu_91bb50ed31754ff2.webp 760w,
-/ja/topics/3d-recon/hogs_hu_6d096b3cdca8aeab.webp 1200w"
-src="https://im.sanken.osaka-u.ac.jp/ja/topics/3d-recon/hogs_hu_78bfc6a79c6686f6.webp"
-width="760"
-height="286"
-loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p></description></item><item><title>画像や動画の生成と編集</title><link>https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/</link><pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/</guid><description>&lt;h2 id="画像生成モデルの分布コントロール">画像生成モデルの分布コントロール&lt;/h2>
-&lt;p>&lt;a href="https://doi.org/10.1016/j.patcog.2025.112614" target="_blank" rel="noopener">Weng Ian Chan, Hiroaki Santo, Yasuyuki Matsushita, Fumio Okura, &amp;ldquo;Instance-wise distribution control of text-to-image diffusion models&amp;rdquo; Pattern Recognition 172*(C):112614, 2026&lt;/a>&lt;/p>
-&lt;p>テキストから画像を生成する拡散モデルは、視覚タスクのための人工データを作る手段として広く使われるようになってきています。しかし、これらのモデルは大規模な学習データに含まれる偏りを引き継いでしまうことが多く、その結果、生成される画像の属性（例えば色や種類など）の分布が偏ってしまうことがあります。これまでにもこうした偏りを減らす研究は行われてきましたが、その多くは単一の物体を対象としており、複数の物体が含まれる画像において、それぞれの物体の属性をうまく制御することは難しいという問題がありました。
-そこで本研究では、事前学習された物体検出器と属性分類器を利用し、拡散モデルを微調整することで、画像内の各物体ごとに属性の分布を制御する方法を提案します。これにより、生成画像に含まれる物体の属性の割合を、ユーザが指定した分布に合わせて調整することが可能になります。
-さまざまな物体や属性を用いた実験により、本手法は指定した分布に沿った高品質な複数物体画像を生成できることが確認されました。この結果は、実世界のような多様な環境に対応した人工データを、大規模に作成するうえで有効であることを示しています。&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img alt="Distribution control" srcset="
-/ja/topics/gen-ai/chan-pr_hu_77cb27038f1bb73b.webp 400w,
-/ja/topics/gen-ai/chan-pr_hu_93e35abb8086b2fe.webp 760w,
-/ja/topics/gen-ai/chan-pr_hu_b48b71710b548e78.webp 1200w"
-src="https://im.sanken.osaka-u.ac.jp/ja/topics/gen-ai/chan-pr_hu_77cb27038f1bb73b.webp"
-width="760"
-height="433"
 loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p></description></item><item><title>🧑‍🎓 中島研究室（MIMLab）への配属を希望する学生さんへ</title><link>https://im.sanken.osaka-u.ac.jp/ja/post/recruit/</link><pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate><guid>https://im.sanken.osaka-u.ac.jp/ja/post/recruit/</guid><description>&lt;p>大阪大学産業科学研究所第1研究部門 複合知能メディア研究分野（中島研究室、MIMLab）は、大阪大学大学院情報科学研究科の協力講座として、&lt;a href="https://www.ics.es.osaka-u.ac.jp/" target="_blank" rel="noopener">大阪大学基礎工学部情報科学科計算機科学コース、ソフトウェア科学コース&lt;/a>、及び&lt;a href="https://www.ist.osaka-u.ac.jp/japanese/" target="_blank" rel="noopener">大阪大学情報科学研究科&lt;/a>の学生さんを受け入れています。&lt;/p>
